@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-google-adk
+google-adk==1.21.0
 python-multipart
 pypdf
 httpx

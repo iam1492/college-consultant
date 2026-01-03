@@ -2,6 +2,8 @@
 from google.adk.agents import Agent
 from .tools.read_pdf import read_pdf
 from .cds_schema import UniversityDataSchema
+from google.adk.planners import BuiltInPlanner
+from google.genai import types
 
 def create_extract_pdf_agent():
     return Agent(
@@ -13,7 +15,12 @@ def create_extract_pdf_agent():
         JSON 스키마에 맞춰 데이터를 추출하세요.
         """,
         tools=[read_pdf],
-        output_schema=UniversityDataSchema
+        output_schema=UniversityDataSchema,
+        planner=BuiltInPlanner(
+            thinking_config=types.ThinkingConfig(
+                include_thoughts=True,
+                thinking_level=types.ThinkingLevel.HIGH,)
+        ),
     )
 
 extract_pdf_agent = create_extract_pdf_agent()

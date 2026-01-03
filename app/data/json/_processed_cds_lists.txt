@@ -4,3 +4,4 @@ HarvardUniversity_CDS_2024-2025.pdf_full_response.json
 Rosehulman-2024-25-Academic-Year-CDS.pdf_full_response.json
 stanford_cds_2024_2025.pdf_full_response.json
 Swarthmore-College-CDS-2024-2025.pdf_full_response.json
+Georgia_Institute_of_Technology_CDS_2024-2025_FINAL_20FEB2025.pdf_full_response.json
