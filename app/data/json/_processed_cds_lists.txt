@@ -1,5 +1,5 @@
 CDS_2024_2025_Williams_V5.pdf_full_response.json
 hamiltion_CDS_2024-2025.pdf_full_response.json
 HarvardUniversity_CDS_2024-2025.pdf_full_response.json
-stanford_cds_2024_2025.pdf_full_response.json
 Rosehulman-2024-25-Academic-Year-CDS.pdf_full_response.json
+stanford_cds_2024_2025.pdf_full_response.json

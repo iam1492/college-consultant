@@ -7,6 +7,7 @@ import sys
 from dotenv import load_dotenv
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from pinecone import Pinecone
+from typing import List
 
 # Load environment variables
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -26,11 +27,24 @@ INDEX_NAME = "college-consulting-index"
 pc = Pinecone(api_key=PINECONE_API_KEY)
 index = pc.Index(INDEX_NAME)
 
-os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
-embeddings = GoogleGenerativeAIEmbeddings(
-    model="models/gemini-embedding-001",
-    output_dimensionality=768
-)
+import httpx
+
+# ... setup ...
+
+def get_embedding_rest(text: str) -> List[float]:
+    """Generates embeddings using Gemini API via REST."""
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key={GOOGLE_API_KEY}"
+    payload = {
+        "content": {"parts": [{"text": text}]},
+        "output_dimensionality": 768
+    }
+    try:
+        response = httpx.post(url, json=payload, timeout=30.0)
+        response.raise_for_status()
+        return response.json()['embedding']['values']
+    except Exception as e:
+        print(f"Error embedding: {e}")
+        return []
 
 def query_pinecone(query_text: str, top_k: int = 3):
     """Query Pinecone with a text query."""
@@ -38,7 +52,11 @@ def query_pinecone(query_text: str, top_k: int = 3):
     print("-" * 50)
     
     # Generate embedding for query
-    query_embedding = embeddings.embed_query(query_text)
+    query_embedding = get_embedding_rest(query_text)
+    
+    if not query_embedding:
+        print("Failed to generate embedding for query.")
+        return
     
     # Query Pinecone
     results = index.query(
