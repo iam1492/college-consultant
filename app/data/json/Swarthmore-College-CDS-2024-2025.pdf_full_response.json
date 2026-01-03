@@ -1,0 +1,454 @@
+[
+  {
+    "modelVersion": "gemini-3-flash-preview",
+    "content": {
+      "parts": [
+        {
+          "thoughtSignature": "EoEHCv4GAXLI2nyYcKOyomOyo8Un7CnKE8awm5X_-JkT9Nd099HHDhxoO6DFZuw_jqcaxUhfSixuKb4g7tm-BccxfiEkkL09P5JzQjhNytW2iHtFc0EfAooUO5Y4rCvt8eN-B2e3C7LcYvUMGaK6QC6ZC10WACWrwUtNMxIOxn_hP06yoXZFrHch6JuHy0s3qRgwI9r-3Sd11eRwtg8g4bYUrOoEBx9DzR-0xqJQAt_dAChJ72Tm7mHl_2hHKWQbhLyvZQp-pKFCqTnwTX5kHYRR3SlQWPKf8knSVRwPRF-awaoMnq-qThNHkHUVrME24xUaCn9hq-Kca1SJ0Ql9LTQi-3XQTf5ZjoVU-oFrj2EP6anWW7smTrB7lIpaHIdYSx8Q5X8cyWuM2VSkphiuTCyjHJbfOJhb6DYLi3x8fCI6YjFyFeurC1oCiMRfFfDvmIhphdP8YhwQWjiYFgMjY4bja1k7J9FmhYMUkan5lRU8pCh-efRyinP07tgEEsFhDEg6odVwv7MUyXMt-U6w5rL44qKWtvkB3eLEFmhTC9DgvS_Pk80nJyhO0myoZQ9YYVyhFw4KYw4cxAT1ug0VHXsZE6FYk2vOEHPXC-AMzGjH3F-ACTv7S-zQXYEaWiHhWN6Kc3cHfrNywCYhP5_oEdXtz9VsGukJkRXevVenfLNC2FXb9FUse071Dl89jXAL3_uH8rsBweF3zyC2Uv5jkMX8a0G7NF3lBwpGxGdN3HOYvlZ-yL5aBRt4ETKtSFQzV3qc-Qq9ofOizKOnyc_JcHKed317ZHTm9lqM65U-Is9RRKIUm7SKoBCmpY0dURstipKvzL9hTYndq8ygUBBlELVLlcXCN8Q1ZNTEBDLP44niXpYfgxF9a-rFUdwGiXMNcU0UAlyd0skCOVjk9aDwfl-ghcNK8khs_ml8luinEPBAfFPPB86KBHbyZlN9shsUfnMLbC8_DZn0OFya091y2f-OsZWbkeJP4jwoEcEBjvES4RA46md2RQwflUeru7cJYgVCpl2fI9Gyv1v6rH9tgEV3DNKLTtlj6EN-_nUlXJ2GEqp4za9ZnoLIq0w0csH4mtxVJV3FCHTlhXLpZCn_N7SXI_m0x0f4-SoZnkFGPGCyouhGT-RXlpE_7iq1jsUCc-18jfV0hzKkfxXNgyqx2J-9G53DDP79VGuQgFNjvCfqp3qC",
+          "functionCall": {
+            "id": "adk-27e9e511-b8b5-4517-a5f1-ee7f1b3b3ef0",
+            "args": {
+              "pdf_filename": "Swarthmore-College-CDS-2024-2025.pdf"
+            },
+            "name": "read_pdf"
+          }
+        }
+      ],
+      "role": "model"
+    },
+    "finishReason": "STOP",
+    "usageMetadata": {
+      "candidatesTokenCount": 36,
+      "promptTokenCount": 1726,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1726
+        }
+      ],
+      "thoughtsTokenCount": 273,
+      "totalTokenCount": 2035
+    },
+    "invocationId": "e-17a1d74d-0f2e-49b9-9ad8-dde760fd17c6",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "longRunningToolIds": [],
+    "id": "819e4a5d-1b78-4337-a16d-51da5550ba03",
+    "timestamp": 1767479223.544344
+  },
+  {
+    "content": {
+      "parts": [
+        {
+          "functionResponse": {
+            "id": "adk-27e9e511-b8b5-4517-a5f1-ee7f1b3b3ef0",
+            "name": "read_pdf",
+            "response": {
+              "result": "파일 'Swarthmore-College-CDS-2024-2025.pdf' (크기: 1791515 bytes)을 성공적으로 읽었습니다. 내용을 분석하여 JSON으로 변환하세요."
+            }
+          }
+        }
+      ],
+      "role": "user"
+    },
+    "invocationId": "e-17a1d74d-0f2e-49b9-9ad8-dde760fd17c6",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "id": "b58200c9-b928-49ea-9e89-9ca532241350",
+    "timestamp": 1767479228.323595
+  },
+  {
+    "modelVersion": "gemini-3-flash-preview",
+    "content": {
+      "parts": [
+        {
+          "thoughtSignature": "EtowCtcwAXLI2nyRDaGYxRHkwr7OC0QTmTG9KGXOWYxUnOYZG27Ud_B9BdGM0fRQzpyEyDPa9lQkTpaBYzsGUVqshphYQZdSPTtlSAY6MC27Iee2FxZr-hOd5N1ryYkSX3nwKm3Q0g1QtxPKexKqN2TUR2_oMi9a_jhoh36vus8X7Kp_uVUph5Z6F07BDJ1WdQCb5_-aQIKmQkMmKSQo3rACaPs5D6QTDqVVTTnY4L3WqOnLSeN1bwh8ylOtxp86Ninpwr1ECMHTJTrotPNoEKUH8jsAmIubkZ6QiNNi7MHRAzyEaDrbFQk9u7npbCQWDsDzdwtiC4G9kCWhiRDJD0wNlNPHZQCmIlNOHkv3nFZiqEoXQJKnIxU0N38xCKWzIARQRmwvUv86hrp63jJ0FLug-tfQB8l0kB4gd1oLBGGraI31IV8gRFzB7b4HRHDmBFbBh7pmdUQPyE2tjVLUSXa1pNNQLllpk7HxEHAk6Hff-bBqqZQzReNPU1F2zAsdnqJ09F6JOs0_aI5tA3ELP1Uu4srsEzcQbSu10lyD-fuAZ0Gka4LnsO9jenrrzp9R8WwBp5L9UEjs6Li7kHTwaZgCX4K6zT4YNI9j7is6r5A8wtSXyyu0GeuowzqMahyyUt8hoCH7eVI63M8N4usMjNb0wmJd8fdpzzX2vCRfZfYGs48EVl7yTujIeZEq97_oW4jOme6MWhB8i9eltpa0eQw6CuySv1NLZvN3MMQJHzdNcG2fo0rxBE8bf-DzmQ5HftlCnRnmQizpe-Z44BwoRcDPOTYXERapZJtyeUcMkvbH08NbFbSdWx0LkHXbid4KZyJVPzpJBrLViSEfb893Dd3-TkI-RsZUOhzDnkgrS5-7RkNk8K37AiaX3xkdjBO3qP9u8xXq2sdcE3wLkgScrgGB3iqig6foGbkh0zOyNChOR6Wz7mv5ZLOYck7dVpW6AyJv6LDMdWCNNDUIXs7dhazsPnoqWEzEZPaMskJb48h8zOrpSwhk-JyEhsmt9P-Xvy_Kc0bpHNQpOxZYrtRi4jxdi83pZDZm6neKvb08JmFlk7vyvN4Gl1u2cuIDujnR3NrIfq1jv7GSuepgyp5nc7MXP1hcCdlLY5mcy4hI7GpeRFUZDCQxyuMfnFoPb6wjeYqrWzOWPkx7aqRCRFRt5hAi5gV05oAQ6NmCSNXaL6U107o0anGPette2IEV4jiGqcvb0Hl9Kl26mykbugiQUT_0s-Svnqt5TYdkstWTqkTBgci65Pbj3hnab32ZYKnChqIS4B_5tpEiiczec2g64osJOZYBlF7gal2zyTW9j4wVQnPVGjIcrfKqjGbiVY1Bv-011daXvMBKJIcDkbclwsdYvxS38aC8kIf5KErcCghrzmURuU4449kBEjHPMkl1XFghmh8zm3u21eD5wEXyW838Jp-1sOxNyLuC5fsF2vlqfi89G1ezR7L1s_wgnpFKbYosTXvXlCXfe4pHVdiUahgpNvYcC-GiNSNsCknos4Z5d9GxGLz9uE0Ms8a3QmZW8UaYtpDwdKQmzO3Iw4-L4gvSKjRKvxbL5l9Iq0Rgeuyn_-p1FFChX9xSt5KXphS1cQqo_1XvVWL_cSRRGkdkh1Ohn8-fs1KeUv4qnYEAFfVEPI5-CipDCbIQo40F1nUkoCH9b58abt0e5FTaaf2pBTlpW9_M2-sB-R-rJQlMpssepbS0whImo1OBIFuGnx0Vct0fdhThNEnDOH4hATkHfgKiMKjbMI1bo_vNW9K3YXzMpVn6_IMdlH_oMAHr2gBgGYIs-O4ShqsSFusi7nGk3lR1so6AZsZLiYJGvdGcLLYjPDhCSwmVg0ILNrd7nZB2VPbasEeKOj4BQgmhR1asiOUeK5XrmS2A70_vgBh9F5YqxSOJvyzJzDuCt2bDp7hE6lYWN_Ior9t6s8HEp1MRbgky3K-79vc4A_tDJuv2wXWFOMr-CWgAISAB-IIhbttnVqKF_7Q1piY3-kd5-3bsf0QclM0XjkbtAS-oHT9-CzOx-krX1_p6JRiuYgNt3kcHBaZn_n_4nQmyOhb0Upr736gMOdyocYvOqDL549Gusxwq9J7UNfKTrjlwSYfqEkn_axW3DY_BuHPpapSfAl1ou-lrpR2KSDdeBCyM08W9XLhMzKs4i1ocPZsforhsZeMLntCPXons3IW-rpgxd0eh8B1UzEgLTiklA4ub9ybkY4_CEQH0pkaOD1K2TCNwORElx3Gw1uWdhUn7RZNjm_um10TH9-XaCJ5Y5Z8Yk0CKF0zYPe2fnsXise18Jy0PVW3IYHhddBs5ktBSaUgLcjsjEjwWa3mP4obF6mtxCX5yPmrd_JQ9EMVeiVKTanJy5sPpu7OeqqkPzsVvfbkL6-AuYHxbo5qUKlQAwOh3NMKcgxQeJ2kPGPTX7Vr0DX5YHN-jP5HguDLH5JGa9hkhawkCegsupsjdu_Kc5MDsTrBaJYmhGwCJKQKGdDwty88XvMA0qPs6G_ALbfP0_zuvs1LPpSZlqDkBAa_wJkzw3qqYffsfQQh_S_inbJXWSVFtLXHAP_5y6YPvukMQMiWvi7xSC8nPugykHkKsvgpG5dDw36i5xgc13Xamm7_Z_8gA0p0RbN-2ZMGWWscKce-wY03uOYT9hNeYJFUDc7UslE0ShQ1eE8cL0u93WLNfY5I57IH567RQ2VvnhMJeXCzdqOuYZ5AtZbNxbSxnAr2NkK4Zvdu6-4WBmWeyWhTJvalWNs153_kcan1SIzjFm7cyF11Yakg7bxn2WKGuhfSttzdihVLZ2VJaIPJhx943E6gtKsob0exAjNRFklZxSPaMT6_ILfWf6NjlupDGBVBhfFYzGCRQoezaL8ExFRdRN13hnrKz2DZNEaR2YyAuAO0C9lLlCIeuXJGzYsjyaXK4wjNhlg8KQPi5FqZOJ0lJ2C8odGKxv6VlhOQaYWxdfn0_VyI7Zyg9r2MOxoMeAb07OFLZSUwqlkzVBLX_luhC6pRt7F88uDDPGNuK-rt31rLIxsUHGU3W8AJZ0a362ZLU_jM7vIOEUXJqTZKx5dXkXDLnJcBbIJvTA3gCT8t4aa5cyEMeFFq6Y3iBXC35EJg1QlGeUgZ0nCZH4NeO0ztZw4jpzaFXUUkp6owOuRrI_qSokziuDOYO1eaQj_up4seHKMYWV4OvBCjax8RuRrtCmHLyNMMk-XzzWGKdau04OoGNiRMTZLVf0XIiFZYShIGw708EZjrF5LKJefH1ZQrgSa1r1QPJzdibkjVNBR-2OXmoBuvZNhyW-re8syoD53FaVYUvEWhF1D-gebOquI44xX88ibxtAUsAhk5VXJxugsG7xWGkUwYxqXkBrl4J3ah_wKckXl-DJ6igxItOf3RDz3e9fa1cjBZ34fIRfn7fEdQpuBfoor7Vpsvr-1S7DEh6jFG4MmjIPl7_5UXaOBVyF4g4dutJW1Jra_hom5NvcA19mse-nLGmQ_r0lCSw_vxeip7bqj47ON6hDkiJZOVVOfVBDBquSnaEbGaawZfxjwxGIYh7uXpWDd-HB9sE7UdRaZjhwkCm3LoISqvXocfKNKeJe2RF3xY1pjklVa9WYptNH-DPfOcZPMxCjV6iOJiPUMEfG-Hk6Yd1x-pKckkFs5MpiD09s-IUxS7eGzgV_oFd1kku6uQWmjClFa3AR5thPC99ic4lL-Wc8GhTPiAy12in-JzQbhQJKLv8BSo7LawHlDEzrBSlIfnghDSnMDPKtnCMZ43WfY0eHvZ2qnmJ7odQ0BAhy7_uj-_U6KbiuEQskNO5Ka1oZ0eBCYziOoKXfbhQgAGUIpfI6NnN-FC2jYppWGzuc47yE7zJ5Vu0oueBjTZQwe4UV-nMLwsZOAOV8saJelMtv2pBf00xuZa5FuQJ8sOilodEao9MbcbCy1EziyeT2jdzk4KDmQ54Um9oJ0IuQehJOBD2Ke4-9nrPUGer6VAyIFuET1R9B69OyF3j7UETdS733JrL5l3OVtJCaSoWZw7O40txqKPplCIs72KA3CJrxYCJX86Ognaz3oTkpgEPsMGmUoU18Fyn8ayDUmeOa2HMLCjyBE3Amg0_wSjnfjEeu_NcaQRAAh7NAki3d6tKMNnCroNVKnvatdfFG5qj_Gqfu_0o73OCcU_Eh96-TpD1WWPkh24ipPdTRfDAjKEnV-b45QFsBMyGVMZK122uK-iHq6kAEhEIShWVI-DYjEapavw2aAbXXrNnSeAF77nsyHqMPP-7eSgc_wURPD78_qKw_QnG4IZFRePDHE43BHFPjAkh0owm3dXA8mEvYDpAMHqPiWPTBMLh53x3Ct-gLpJB59tX-oAUBu91HE3IrnmGF7Jtneey8oLjEOBXq_syZVGaGnBICToo6HqOV85ry2IrJyiPNP8991FRiRtF9WgZi_EjKYAFhlELlhmoYqBFVfggCnxhZXm5aQY2GGXzkjU8c5xRV-Q8uAHhn_iySv2X289Q_2YhIfSTYf1qt8DokkhJHqp4BcY27FdwEETzlnoAy8P2KL6cgnmVyZNuBSTGxpbyOWkF7HKJ3G2WLqdf6zruJu34xifL33YtiAYYDzIXTkIzIPRWRTgI-ZLvjaBD0zzIz5Bmb4PZYIBZDdKYGgw2dtacZwflvlRP_TdEDpUh_grBwFQjTaXoiYpzD8gvRn2tVi2W54wNFfbopWNjvf209xpo3uMGMq0T3UcCKfQu36OOzmO3rQjTHNp9ekz9FHEQHDBoEmGCXydJDY7Sv4-d6eGHry4RcJz4lLedHnym73CyKXneokXSjdTFL2hWZaN0dIs2zp1S4msf_QZsf32ElvubZUBTpy8oY_DslNV1KYpLSPqIDYghCkppoSeACyYhmNmoEupXfMqjxy9-Q6qz1UWErAGCjE0TbUk_jVTR47LKy4rBpMgy-Gi1FYPNL_rRdKzOMbSCD3DpzqLfSkaaiFbMpKNLLHd6_NJKt1mrM1sgsy08yZYhQ5h8bRUOxVMlV_oeiKOfZBDjh0gzuSo3crHrzSIANC7kb8UEAVsUyOAIXiD1Gtl4Tx9tS-9020xBwTgMjVwBAG3hHuof6qfsLYjenoc3wvyrqr09QmSpHag3KzxArXw71WZ5jQI2RyHhUP1Pn91yydgysqsOlQ5i0anb61Y67iiLem_QqEq0ULjCeyjMVsCh8apBcilIgvimpQv4lVCBMunh8cz6M8aHalYHjnwhJFqkESCgrj4Mb2XelRCllEAty_cHp0N3TZkQNClnVdh_TlBCawmXaBTuW5mIZoUp8wf_GXGvko3s4fFdOau-6iEMLXQBWObsSk3uDwSye_rdYYmmKyM6g6Sc7PQ5YFDj1iXtprQMMs2dXZuyQX6lOJiTXRCmxFwGBxg8fXazq4S_mm9rvBa7Q35wzTVhy-wnHYD3fepN9lPHLn3z-rZanTjc6tU4Sj58aZp6F15zuH0HAmv1zY7w_3X0izYgfzoGjSwqZhwBW5H3IFQoSvl04KtODzqY6RiwEN3t7qZGDuWiff4jZcOR68-MxG6yEsFlqoCl8jIR3d3ub5c20FEc6TfzecsDuOdHIzR7513GbwR-m0kA30Mllw4eFq6pF1pDuP9zKgnGGzg6Fs-FYWIf5hbcRsGO_sXBZ2dbQ85uc6SmE3eubcoPsAPVwmJkYg32F8ug3MYGjQYsDmb0HpRWfwy6KWezDfCieOFM1ZeDNa0nABAYro1NrWal5e169_ABrVc-FvAH88I_yb3T-NWWS7zOg4PeWZ44pvhgRU_pVAozk0ZMackiRDHQfLkzCau3N-No0R9rJ0pv1cyk-WQ_RvaY3VdUhYkFpqEXrMzTIMEx-zyoafye1-ze3T2VhZ_1MZnR919XQS-VGup1t6xAUmgpcd_zC12W_r-z6VYXrDlO5LbjQrLK3-IZGSmFX0_UwmgK2W5mFO3v2qOz_p-nbhGE4XCleDzSdsLmjqL509CUlAXC8abBqtGxdbHtpbw9h4nekBVLQABO7QDX-E5IL8f_OIcmg9Puxfb1pV3yasN4KP_K5rbFVsv0UhC6ogGZNmrDe34paX6zCOYhDMLgvsZCF28zG1lyUE3FV8-UxjsgEzQXyQhRUlUf8vp5vXxZwp0XsoCHrD1sDRoCWVmefYVVlBBUL_e6-0UsijmyUctYdWuDG9HgMeRjXWYQAsH-zVtxzWjhnm_hf5UyHt8IYYzdJaGE9UY4OGPbqBnawZ1leQBLPl5NhIH4uZVz9l4aZerZg1HlJNRCsCa4ZW5NTX6XwvMIVcrZl5hKTRF5M99NYUwVlGapMMfXkVM8XSmATSW0SwLEmMqQAMOEcMwC6i9bJ4oTZ9E09g7bFZc1PLpAh0PlOIlF0IcLt7zFliPVxgwlgw7HnuqQ3Ylutvt3Iy9GEb2JDuNM0cuI7xMS7dyPIGKDmeZp8IR2psw7Nc4BoujxW3TYI92EVHtBNaDz4qy_CPixoQg3R4lP53K-wAsvKr-7JVNPqw4ysFcIZ9ecqZUEJSt3cMSs6eXkQkZ-_rVj8acgeM1oaQn1LrcuZozXTzdjnW3fLrv595RjKYTCLj6hFrYJ0_ZnS0nWyaWzl2JbvN0T1uJlKTKjcf_FkEcEueGcDNTuqhTadB2l3ODYloPEuo6FNn722il6No4zgS5HtD1q_8IyEPUDbsuRvU9SDhONiVvRV_KTLcvqNVVQXoHsAGdtC6kPJ9o3L5oXCRTdGhGQELKYZr1wkya2BGHtJWxQJmqYhYOtsQm_wGNvf9asGB5m496Fo2JHUfWWP2bQPu5e5I-xFMZQvb9dFRWPxHCkqSStaR6yD4me-s87aWRLMMUEBoe8tJwfi1-L95jqY1Y5QrSRDhQS0mr2kxt73znqqP1uT3ZSSwgNO3C1SOlEJstpCROcDJ3pLO4tFvO-s03Z3TFALCv_Q3-TF93XlP9MM2CxzYKWlYuS4jdfwzxyX9PMYhIXt-sXAjHlalQByWUZo05hk6WoBVqOYzTnRTzbbIVjOhbQ8XuJbTdRuVRxoHiW2X5akk_KdnrJugiYhU37wDev9WiW8uCXzwWYvc_VkUsEPYVq6Z1XC8K_4_7m-o4kDZRzeP1ehJ0zgClLCCmPe-wbbfZVGVqZSwXf_BqcvI9BIp3EMrcDUCepr6q9bHJQ12ujDZXXtcL3C9yYLO0zX7gqnMDJCGO855ffNbeLFzGUg9ZCgnzwAWofIunbW-v2Ydwefk-Q_OQ4ojZMOwTglMqB0GEdOk8u8Xkbm30UX13BxkTpuU9mYISoucaA4Qw-DYU6_xcg2hqBE-_4FtqkhwVfTBY0VAxxwdabcTDvosnDwDwZtQugziE4gRC8fn_RRNZSGumVtw07RJgcsaPytnZiMPKNPZNgeodgKrAzFRP5-5JaKWGeALfR-dupICNNXF0pJsnc8S1y8cz0_S0RogFg7GeZVz07SYIqN6idgBQz4hJXjmssfzKso4f4nDsIbvVgCejUkvo-MA-4RuWiUVtkamqmfV4ki-VSXigAlD_uU6KnjZ3CGXqpoFDm9GMBXA_JNq9cIXcixMI_97JUouNhh4P0v5obozaNqJDNpNIZueaZL08n6J0Qjh21Jo2PSzeP4qO9VJDGHNb8OkR5Sdz-tIHhhZ3Yk4SI4L7DfolRAY6rK1O9_H28ZTIXYopIKLp-eSrjb4oKY_ZeOhGoPrulhmdRElNoHe2EeRKJMRL5bdcPHD30j7W-mkn3UD0hYaZIcJ33TJrM4UJLZ6uKIFJgFsiLMGldh4z2FicJz7ACM9ifx6PVy1ANAicnEeFBGHlBplalmPBRTbg2nJJ8TE8LTpR3POomOo8seBlki1z7ckE5ufn1SRXwy3Juj0t8QKzq5MH9aslQwMj-x6oJaPWKaJbs2wtMEarm8qpshrznGcsZXaSZGCNIEw69o2rQ03R6J2hvGkdv7nEEjIlIRWDEhDjci7XrqDnTogcuOnrFxHMeqifvDOWxPuop4uQqYfv_kCyW8oLp2qfIS-3hL1o5WmfJghiri-QkAb2fae_hzIAPL3OVjxblLY4rM-SroUfI95PE8xDs-iVla2X-D3AGchMiVdPbDR4mqEUWVI8HCMiF0OY0WOGXcpMZtipzbsuwk_KiSjT6seTZEEoG0_x9yIaJQKoLvRiTKHAITnWSbsaNbPEsOniziWTjAKvYCULs9qzfJd9jIKKsKwvCsHC8dEV1g9BK6uJ0Kr464JiTfroN4RXvtjyx_UeA1mp-8W2Z9pRn7CONXLOiXVx9jEGKCzJF0I0W2UD2M_rc3P8MxGunxn83UOPPPBHqd6v2A5T1cFLfZNmLvk9tKdBi",
+          "functionCall": {
+            "id": "adk-1ba24ee1-8c44-42a3-9d5d-7028ed9d9839",
+            "args": {
+              "deadlines": {
+                "regular_decision": {
+                  "notification_date": "April 1",
+                  "deadline": "January 4"
+                },
+                "transfer_admission": {
+                  "deadline": "April 1"
+                },
+                "early_decision_1": {
+                  "notification_date": "December 15",
+                  "deadline": "November 15"
+                },
+                "early_decision_2": {
+                  "notification_date": "February 15",
+                  "deadline": "January 1"
+                }
+              },
+              "test_scores": {
+                "sat": {
+                  "math_75th": 790,
+                  "math_25th": 750,
+                  "ebrw_75th": 770,
+                  "composite_25th": null,
+                  "composite_50th": null,
+                  "ebrw_25th": 730,
+                  "composite_75th": null
+                },
+                "submission_rate_sat": "31%",
+                "policy": "Test-optional",
+                "submission_rate_act": "16%",
+                "act": {
+                  "math_75th": null,
+                  "english_25th": null,
+                  "composite_50th": null,
+                  "math_25th": null,
+                  "english_75th": null,
+                  "composite_75th": 35,
+                  "composite_25th": 33
+                }
+              },
+              "metadata": {
+                "academic_year": "2024-2025",
+                "source_file": "Swarthmore-College-CDS-2024-2025.pdf",
+                "extraction_date": "2024-05-22"
+              },
+              "admissions_statistics": {
+                "applicants": {
+                  "unknown_gender": 0,
+                  "women": 7330,
+                  "men": 5717,
+                  "total": 13047,
+                  "another_gender": 0
+                },
+                "admitted": {
+                  "men": 418,
+                  "unknown_gender": 0,
+                  "women": 530,
+                  "total": 948,
+                  "another_gender": 0
+                },
+                "yield_rate": 0.444,
+                "cohort_year": "2024-2025",
+                "waitlist": {
+                  "offered_spot": 3111,
+                  "has_policy": true,
+                  "accepted_spot": 1939,
+                  "admitted_from_waitlist": 22
+                },
+                "enrolled": {
+                  "full_time": 421,
+                  "total": 421,
+                  "part_time": 0
+                },
+                "acceptance_rate": 0.0726
+              },
+              "student_life_and_faculty": {
+                "undergraduate_enrollment": 1662,
+                "demographics": {
+                  "international_percent": "14%",
+                  "out_of_state_percent": null
+                },
+                "student_faculty_ratio": "8:1",
+                "class_size_under_20_percent": "74%"
+              },
+              "high_school_profile": {
+                "average_gpa": null,
+                "gpa_submission_rate": null,
+                "class_rank_submission_rate": "24%",
+                "percent_top_10": "91%",
+                "percent_top_50": "100%",
+                "percent_top_25": "98%"
+              },
+              "admission_factors": {
+                "considered": [
+                  "First generation",
+                  "Alumni/ae relation",
+                  "Racial/ethnic status",
+                  "Volunteer work",
+                  "Work experience"
+                ],
+                "important": [
+                  "Extracurricular activities",
+                  "Talent/ability"
+                ],
+                "very_important": [
+                  "Rigor of secondary school record",
+                  "Academic GPA",
+                  "Standardized test scores",
+                  "Application Essay",
+                  "Recommendation(s)",
+                  "Character/personal qualities"
+                ],
+                "not_considered": [
+                  "Interview",
+                  "Religious affiliation/commitment",
+                  "State residency",
+                  "Geographical residence",
+                  "Level of applicant's interest"
+                ]
+              },
+              "cost_and_financial_aid": {
+                "financial_aid": {
+                  "international_students_eligible": true,
+                  "average_need_based_package": null,
+                  "percent_need_met": "100%"
+                },
+                "expenses": {
+                  "books_and_supplies": 915,
+                  "other_expenses": 1215,
+                  "room_and_board": 19410,
+                  "tuition_out_of_state": 65300,
+                  "tuition_in_state": 65300,
+                  "fees": 420
+                },
+                "tuition_structure": "Same for in-state and out-of-state"
+              },
+              "general_info": {
+                "academic_calendar": "Semester",
+                "city": "Swarthmore",
+                "school_category": "Private, non-profit",
+                "state": "PA",
+                "institution_name": "Swarthmore College",
+                "school_type": "4-year or more",
+                "website": "https://www.swarthmore.edu"
+              }
+            },
+            "name": "set_model_response"
+          }
+        }
+      ],
+      "role": "model"
+    },
+    "finishReason": "STOP",
+    "usageMetadata": {
+      "candidatesTokenCount": 984,
+      "promptTokenCount": 2099,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2099
+        }
+      ],
+      "thoughtsTokenCount": 2248,
+      "totalTokenCount": 5331
+    },
+    "invocationId": "e-17a1d74d-0f2e-49b9-9ad8-dde760fd17c6",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "longRunningToolIds": [],
+    "id": "cbf684ce-5c0e-4062-83fc-9e5f092ae032",
+    "timestamp": 1767479228.328825
+  },
+  {
+    "content": {
+      "parts": [
+        {
+          "functionResponse": {
+            "id": "adk-1ba24ee1-8c44-42a3-9d5d-7028ed9d9839",
+            "name": "set_model_response",
+            "response": {
+              "metadata": {
+                "source_file": "Swarthmore-College-CDS-2024-2025.pdf",
+                "academic_year": "2024-2025",
+                "extraction_date": "2024-05-22"
+              },
+              "general_info": {
+                "institution_name": "Swarthmore College",
+                "school_type": "4-year or more",
+                "school_category": "Private, non-profit",
+                "academic_calendar": "Semester",
+                "website": "https://www.swarthmore.edu",
+                "city": "Swarthmore",
+                "state": "PA"
+              },
+              "admission_factors": {
+                "very_important": [
+                  "Rigor of secondary school record",
+                  "Academic GPA",
+                  "Standardized test scores",
+                  "Application Essay",
+                  "Recommendation(s)",
+                  "Character/personal qualities"
+                ],
+                "important": [
+                  "Extracurricular activities",
+                  "Talent/ability"
+                ],
+                "considered": [
+                  "First generation",
+                  "Alumni/ae relation",
+                  "Racial/ethnic status",
+                  "Volunteer work",
+                  "Work experience"
+                ],
+                "not_considered": [
+                  "Interview",
+                  "Religious affiliation/commitment",
+                  "State residency",
+                  "Geographical residence",
+                  "Level of applicant's interest"
+                ]
+              },
+              "admissions_statistics": {
+                "cohort_year": "2024-2025",
+                "acceptance_rate": 0.0726,
+                "yield_rate": 0.444,
+                "applicants": {
+                  "total": 13047,
+                  "men": 5717,
+                  "women": 7330,
+                  "another_gender": 0,
+                  "unknown_gender": 0
+                },
+                "admitted": {
+                  "total": 948,
+                  "men": 418,
+                  "women": 530,
+                  "another_gender": 0,
+                  "unknown_gender": 0
+                },
+                "enrolled": {
+                  "total": 421,
+                  "full_time": 421,
+                  "part_time": 0
+                },
+                "waitlist": {
+                  "has_policy": true,
+                  "offered_spot": 3111,
+                  "accepted_spot": 1939,
+                  "admitted_from_waitlist": 22
+                }
+              },
+              "test_scores": {
+                "policy": "Test-optional",
+                "submission_rate_sat": "31%",
+                "submission_rate_act": "16%",
+                "sat": {
+                  "composite_25th": null,
+                  "composite_50th": null,
+                  "composite_75th": null,
+                  "ebrw_25th": 730,
+                  "ebrw_75th": 770,
+                  "math_25th": 750,
+                  "math_75th": 790
+                },
+                "act": {
+                  "composite_25th": 33,
+                  "composite_50th": null,
+                  "composite_75th": 35,
+                  "math_25th": null,
+                  "math_75th": null,
+                  "english_25th": null,
+                  "english_75th": null
+                }
+              },
+              "high_school_profile": {
+                "average_gpa": null,
+                "gpa_submission_rate": null,
+                "class_rank_submission_rate": "24%",
+                "percent_top_10": "91%",
+                "percent_top_25": "98%",
+                "percent_top_50": "100%"
+              },
+              "cost_and_financial_aid": {
+                "tuition_structure": "Same for in-state and out-of-state",
+                "expenses": {
+                  "tuition_in_state": 65300,
+                  "tuition_out_of_state": 65300,
+                  "fees": 420,
+                  "room_and_board": 19410,
+                  "books_and_supplies": 915,
+                  "other_expenses": 1215
+                },
+                "financial_aid": {
+                  "international_students_eligible": true,
+                  "average_need_based_package": null,
+                  "percent_need_met": "100%"
+                }
+              },
+              "student_life_and_faculty": {
+                "student_faculty_ratio": "8:1",
+                "undergraduate_enrollment": 1662,
+                "demographics": {
+                  "out_of_state_percent": null,
+                  "international_percent": "14%"
+                },
+                "class_size_under_20_percent": "74%"
+              },
+              "deadlines": {
+                "early_decision_1": {
+                  "deadline": "November 15",
+                  "notification_date": "December 15",
+                  "is_binding": null,
+                  "type": null
+                },
+                "early_decision_2": {
+                  "deadline": "January 1",
+                  "notification_date": "February 15",
+                  "is_binding": null,
+                  "type": null
+                },
+                "early_action": null,
+                "regular_decision": {
+                  "deadline": "January 4",
+                  "notification_date": "April 1",
+                  "is_binding": null,
+                  "type": null
+                },
+                "transfer_admission": {
+                  "deadline": "April 1",
+                  "is_rolling": null
+                }
+              }
+            }
+          }
+        }
+      ],
+      "role": "user"
+    },
+    "invocationId": "e-17a1d74d-0f2e-49b9-9ad8-dde760fd17c6",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "id": "ecfabf60-82c4-4493-997f-a28146bb1795",
+    "timestamp": 1767479247.632049
+  },
+  {
+    "content": {
+      "parts": [
+        {
+          "text": "{\"metadata\": {\"source_file\": \"Swarthmore-College-CDS-2024-2025.pdf\", \"academic_year\": \"2024-2025\", \"extraction_date\": \"2024-05-22\"}, \"general_info\": {\"institution_name\": \"Swarthmore College\", \"school_type\": \"4-year or more\", \"school_category\": \"Private, non-profit\", \"academic_calendar\": \"Semester\", \"website\": \"https://www.swarthmore.edu\", \"city\": \"Swarthmore\", \"state\": \"PA\"}, \"admission_factors\": {\"very_important\": [\"Rigor of secondary school record\", \"Academic GPA\", \"Standardized test scores\", \"Application Essay\", \"Recommendation(s)\", \"Character/personal qualities\"], \"important\": [\"Extracurricular activities\", \"Talent/ability\"], \"considered\": [\"First generation\", \"Alumni/ae relation\", \"Racial/ethnic status\", \"Volunteer work\", \"Work experience\"], \"not_considered\": [\"Interview\", \"Religious affiliation/commitment\", \"State residency\", \"Geographical residence\", \"Level of applicant's interest\"]}, \"admissions_statistics\": {\"cohort_year\": \"2024-2025\", \"acceptance_rate\": 0.0726, \"yield_rate\": 0.444, \"applicants\": {\"total\": 13047, \"men\": 5717, \"women\": 7330, \"another_gender\": 0, \"unknown_gender\": 0}, \"admitted\": {\"total\": 948, \"men\": 418, \"women\": 530, \"another_gender\": 0, \"unknown_gender\": 0}, \"enrolled\": {\"total\": 421, \"full_time\": 421, \"part_time\": 0}, \"waitlist\": {\"has_policy\": true, \"offered_spot\": 3111, \"accepted_spot\": 1939, \"admitted_from_waitlist\": 22}}, \"test_scores\": {\"policy\": \"Test-optional\", \"submission_rate_sat\": \"31%\", \"submission_rate_act\": \"16%\", \"sat\": {\"composite_25th\": null, \"composite_50th\": null, \"composite_75th\": null, \"ebrw_25th\": 730, \"ebrw_75th\": 770, \"math_25th\": 750, \"math_75th\": 790}, \"act\": {\"composite_25th\": 33, \"composite_50th\": null, \"composite_75th\": 35, \"math_25th\": null, \"math_75th\": null, \"english_25th\": null, \"english_75th\": null}}, \"high_school_profile\": {\"average_gpa\": null, \"gpa_submission_rate\": null, \"class_rank_submission_rate\": \"24%\", \"percent_top_10\": \"91%\", \"percent_top_25\": \"98%\", \"percent_top_50\": \"100%\"}, \"cost_and_financial_aid\": {\"tuition_structure\": \"Same for in-state and out-of-state\", \"expenses\": {\"tuition_in_state\": 65300, \"tuition_out_of_state\": 65300, \"fees\": 420, \"room_and_board\": 19410, \"books_and_supplies\": 915, \"other_expenses\": 1215}, \"financial_aid\": {\"international_students_eligible\": true, \"average_need_based_package\": null, \"percent_need_met\": \"100%\"}}, \"student_life_and_faculty\": {\"student_faculty_ratio\": \"8:1\", \"undergraduate_enrollment\": 1662, \"demographics\": {\"out_of_state_percent\": null, \"international_percent\": \"14%\"}, \"class_size_under_20_percent\": \"74%\"}, \"deadlines\": {\"early_decision_1\": {\"deadline\": \"November 15\", \"notification_date\": \"December 15\", \"is_binding\": null, \"type\": null}, \"early_decision_2\": {\"deadline\": \"January 1\", \"notification_date\": \"February 15\", \"is_binding\": null, \"type\": null}, \"early_action\": null, \"regular_decision\": {\"deadline\": \"January 4\", \"notification_date\": \"April 1\", \"is_binding\": null, \"type\": null}, \"transfer_admission\": {\"deadline\": \"April 1\", \"is_rolling\": null}}}"
+        }
+      ],
+      "role": "model"
+    },
+    "invocationId": "e-17a1d74d-0f2e-49b9-9ad8-dde760fd17c6",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "id": "50a3a6f9-3aea-4edd-97e1-87b74b8e400b",
+    "timestamp": 1767479247.632756
+  }
+]
