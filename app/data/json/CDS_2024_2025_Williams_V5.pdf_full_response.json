@@ -1,0 +1,472 @@
+[
+  {
+    "modelVersion": "gemini-3-flash-preview",
+    "content": {
+      "parts": [
+        {
+          "thoughtSignature": "EvwBCvkBAXLI2nxuYEv4TTi-s-Ii2J5DTJwd-_cCmBG0VWF6-dP5fppdOXUzWVNiddWfa5Cxn0nFq6E6t3XboxFf_F6_FEQqn-bo5R2wDKv-PoZIKv2OjkHn_qCcV6dQWLxP0PO1nnYiLqey-bFbPxzNNHJ90AH9Z4M-UM6Ns5uFithLvxHPFr2AaAt56MYskax5LSgBc51s74F9NFDeDN_frZeJjioRXH1qXCKmZRA4gCz6xoz0DAakHE7a3tEcj9cWRaI2BnRhp7w_OEL3Zt1If0UVsTjNj62MARlKpc0brWOtBWsWjS-jDh2YvmVIQSrYPPsHFFt-bm80iHlX",
+          "functionCall": {
+            "id": "adk-d08f2d49-7ae7-4686-9923-f668744b5b6c",
+            "args": {
+              "pdf_filename": "CDS_2024_2025_Williams_V5.pdf"
+            },
+            "name": "read_pdf"
+          }
+        }
+      ],
+      "role": "model"
+    },
+    "finishReason": "STOP",
+    "usageMetadata": {
+      "candidatesTokenCount": 35,
+      "promptTokenCount": 1954,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1954
+        }
+      ],
+      "thoughtsTokenCount": 57,
+      "totalTokenCount": 2046
+    },
+    "invocationId": "e-3c577336-2ea2-4acb-928e-dd55f21dc0b8",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "longRunningToolIds": [],
+    "id": "2e83b997-7ac4-4588-8ef4-eb85646c4cab",
+    "timestamp": 1767366383.382882
+  },
+  {
+    "content": {
+      "parts": [
+        {
+          "functionResponse": {
+            "id": "adk-d08f2d49-7ae7-4686-9923-f668744b5b6c",
+            "name": "read_pdf",
+            "response": {
+              "result": "파일 'CDS_2024_2025_Williams_V5.pdf' (크기: 636396 bytes)을 성공적으로 읽었습니다. 내용을 분석하여 JSON으로 변환하세요."
+            }
+          }
+        }
+      ],
+      "role": "user"
+    },
+    "invocationId": "e-3c577336-2ea2-4acb-928e-dd55f21dc0b8",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "id": "9f431102-b964-4afe-b2a6-b9b5619324d1",
+    "timestamp": 1767366386.073419
+  },
+  {
+    "modelVersion": "gemini-3-flash-preview",
+    "content": {
+      "parts": [
+        {
+          "thoughtSignature": "EqMyCqAyAXLI2nwVZtHk1uUElRcg5gx36KaJRi4k3ukjgF3L70pAL7YffkHlaRPeBuKKJV1qJGl6y0L0_2_LjBhXR_ZiaIWXXj9VAQWclhGDnvAkYLQY7nl48K_y4QRk70WQ-b_TtIvfUDHlPTm0oQaXyeIoYphD4gn6q4426bok3F3BGd5VTJ09CwEu73bHnWF6tfkBFGcUL7L1g1NZRxUhGlPWRfEoCjUsu4uYcxMTD0Ec_hapPgjp3uYk0nIzLcdWr_XACxjb5rGgePDY08RI5mECt96cghwTv5gcYnQtmohLlk1_vmqHjHEBasu2bKgd1HvRc_ocirU93ufehfAE5s4vZ-XnlWNaMlGOYMY6jtVQY0W0wNo881VgNsGUP_VQQJ3LOnvrbWUtJ9selcTPRK8p25gPmNsrJl4Y8T03Y31Ha6r5Uk1d2bITnz-O__3HUyxT1-L0jk97jfw7D68wtZ2eKy_QKZtAZVT4BfXpZ3KAOmj96vVTKhD2_QgjLu9t651GiUO2j-jp3xz5VWQTOEc_5L6CiJLlmYuxk0nilbzH8rHB9IKvvpDxmiqWWep5NTuD_uTzI73e0zbNGEwC5liedIrd36x_CocUIZ75C6g5qBH_WQdBh_c_o5sQyhuXAyDUIqxbaiElHcmcCmgUi9xI6MnW61KTpM_n-PBJmLRqJOdDul1tuhxYkKOvGWbcgi0aN04hI7sX_L4-6SxHlicujdLIFNKGqeavIwLfAriyROUZVlCFTEP4LBjJlpYpRcpJcOGfXPYE7cWIdCm4sxBulLfAlHnrYL1SzC6iNrM0f14DmLBBS4M5NiW9wSHS3VRhzXkgLixqeoOO4RCJ9gbii4XcoRVIQ_nKVP5qgOP6U8sItVXW2hKp7yuIdmVhqyHSj44XW5yXm2bDOS1eouvjYfIyCfD0s8R6-icrP7Hq8j5tBsiJLl0A1_M3rExRN5o-FXztyn2mcyeOpUX7g7DCsPZY9Lv-UScN_BOnY_GHxaLEJCUyWCTKLdE9xPn3sRu0kZ-mwF4u34AVxGEfpBCnr_dcw3Gw78UUUht51a2n5NBZeZ1EnBPzr13TTaCciw4bGDpbXsxz6inBaLwSPPJLJcyAD7vQglWYENcvBK5pKua6iZsnPejLpLirsZI0G0OAk7CB6C-I7oYkf2OU8qJ0b8RN0sqPVawYwxushOkH7hERKY1WqAdtjFtY5REyL13UsHBh2jVC6HFzxpdDVOI_SRm6K5-t0bNXU1qCARzbJxoNJE6AyrqXKy3nQhVk1QaJtcn6rLNkfXIRTMHjpyefjXCdvBdL8J0EbDWESc04gPVux5G1dnhJ-Lm5mtRvjC1NGcMr7K3woIvxB1wnb_svUM3EBRh5brXXJr_TGT0wjXcFeZOXjSpMkanmwFeTG6onn4rbSImwUs6yzSd67jL_mWlvIe6cinWuaIEKtfr6kUV0NQD2N5TqYStJMtiT4j_lONWOOFQ5Vg_b5JDUlzkT3ey0Mi2a1vma9nQTvrT0MYHYywObN3UezKoILLABAaF0kocSn-5QeTFSp4utsOT6WIkKsOBwvdcqzYIXqEiQA0j8mZrRh0w1B4c5XL6w02g7K0czAnyA7RdpxIaaINM1mvnVKk9F9lRU6hcoiZ4wtCYhKpzrGPAU8Sp8DEjfF1wYq6n67kxQJYiImYn3bOJIotT-slioTxjSGiP8B7xdm1QgXqq6yOo3-k9o_iWM1s8mUKBjAFrsWbw-LXBHWis-Nif8acB6JPKiM7Cu0lZSDIKCNl29l5oBX0cCmZ7RMJAa2wAwec84y1Om9O0nf2O_-niywCbGA7PV17PvZ7FI-5MeLiZ7dupIjFjVQpiJ-0vseEtTeQv8GgDgJrSUyPdEGmMvUvITSHRhXx0PP53RwbFNItvioIuGFaTcjbFDJVLRAWF_sqzCy1cNjks1EbtdBWzXjZ_vfz6H4sjmWHZgho13DkKHin8ZNxv4Uu-UMjlFtbeKmDVXXEInIp_VbQue_I-E7MZuUaX15m8j0wQgRn_t8zeSXyFZVSnZBQjbHgsXwsDOKQsO_cEonLIKsUt8dtZNex9aoeT-kz2sqtWa23NNZKNoFcvu8MgbjM351RCviPg9R577ZGfkxvhHB1ZAWKQUms6U7gYoeNsp-fv6BE2HyEjJoRv7HW954AA_oC8DRheuk5SZY3cfvvsPMjO2gbkbMHUuTen92Ot_K5qaFNEsSea2zXf5ESZtmiwbYF_eOmGDwt46GYXUb6TsN0_0uDnE9kZ5wbOU6RPQQ3KYABQyretiibzQYRbtOlmLoxX6fgAIcEtDChyTHc2XDi2YkIbe9DqG1LPimX62zG9KjzBGhltJ2ybk2erdmS0TTHXpx0V4uKV_OhvK0agi6op6Bb87FYwln4mSfcljTr7DHuFhqmWu23u2qIGFls32vLYZ3JvoSJdu-5VaxS-L4Huj-IeXamSze6sV1HOexlCzzMGpIcnQR-AcWx16ABc12opa5vP_xpyyC38JVou2FPSBYDrTNStwprtMgf615FG3GT5xbBmdAnZF-5bbw_eYzgENv5JV1iH8PblRnLicnc-E5edJYtePdbvNwwC-FInrQWkRD6lohlUHTQvt0yU-HcqujlNUwOvqz_qOm9Ob4DaZPHlTEA_XHxPDyWZ36uMegF3535p4WckuTGnYGrr5iosqLkTL-PI9ryWsH0CGbizQyYmQw5m-ZYphjhmrioclcykHHx1iLEbvAHpa0YLeEqFA9WFMjCHzVekLt-7HPy1i-VaCGdSW0TT-qJcHL8BCqpaJx4s8rxZVv7EoXBJLe5udziypWerPh7W-_eN4vG_vGzQwpApVL3jQyaxrgzX_-2HrbsJdDexwj1ocnjulqdkydIG0vEvBsde2SoYq3mik-LcTsrHUEoPVrux3FGF7LiKS7SyYoKypGoUgyBMKB3bz_SqiFAyIg8PDmhK4fkev3ygfJIejJwapV1rJqTr06a3BIfNzTG1c4ScX4NtIoXjjK-A_en5_bb61-oB3_aJsAPc48LOuRf8f9Y2IjBTD5qxhSkjs9ds26kU06ZKwcpdB1tBwSvfJPtU2NBj8vxM9AU4VzAsfRpfVcQc5jDoORnr6pcbeKrZiSkQorU_SlIcQZptSvd7IkUERg9SXJgJIyhllEt2J8kSDdu3h0q_5-_mGobO2R81KYll87a9HRsgtnqQjtlTG4KCkew-Ut8XRMffb3hBZFKHGg0VoimfDUBgoWBUqo6a-FGVtV5swDJuW_8q48o75SuV98xmrEsCDFkX34zgcztZtTgTmInGIZwoCFHncZkaYEwiR8oR-UboD8PS1RttKZeBKeRe6daIA5GwT9m9aJPGIJYxiQ05fBhMArN4jS_-EuSdFmOnWfYsVHzEUWnm2CKX_DsNt0mip063wrgNqostk-sy4tBGP5iy4nRlzGhbOeTB3R9oqjx00fLHNnblAtVmorsd4SfjiXTcZ2hZ_lD2Tvu4RO1pPmXIOlmUsnZf4d2vnfW4GtxoNq80MvmHFIm6AmQzmqMu45DAFSPov0vBeoX_D_o_ipHyu797LbfC6wXrE2PwJWeZgSi-dV-It0ch52QdJSGojHKfLQeaqWJ4fc5GuNYj1j11EcNZNSJEXOpDHuxnSB1nN7q54t4oh-AOIKbQTZKnV2XzqBzYzLdpapudV-dI5nsKiOF5NGmrg_9-OsaEbQ1IvEgdCv5on8AoOExBdgnLg_5jJH5_o1wZ-ryAwLXqn4NARhEL0Zo2zwmByxnjqLSlPOC8Sng-u0MI7BeEcF1wGa1Fo70ztuCoy7e7XVwIWg52Yxk4RWRlngRXsKXXoeQ3d9bkBL0WP7Gps-QodAtOZQ6alRSgmeesWNUoBpxDG7iX_0rGFdGuEvXjv8jUb9dD9S12f_RtxOLZZpjaaxf4ZbxR9F31jG0FIO1JuMKCCaLVU5p8b9ljtSbkamBjCs7Hhlq_foN_wWVGjD9Agek_pl8K3_USOwyu1vVsf8W9pC2ia7mTO6eSoN4GgxmHXG9gZhkIILEszOI4VTKrqYqFTX4iG7x4ey6fKxFfvKfmCmVrVkyJM95-v6xTuuFmFyjPOaRyOLj4giG_dv1l_5YaeW0p-rJqW3UHO4HjpZR3FXXqwro3kRHfLWqMhuFveQJnLPwSaYXZpf4fo9-JNQYLERrGQOsaHsfwM6tpH4dSMrlyu2xOolNo3l73TkMlzG4yS3vjCVH_yUADZVe6Ndt-l8gECKwpO50jKc61SF9cyuw0X_3ijHN5-Ran5g_fkzOm7F7U2kFH0w1ZIsebD1OPki4-0Qg8zoLyVQ9piCIQqRRgbPX5563KZnSkePnhtUd8mTfUNcrwnlXViLumoX_Yqv3vB-8eBfAdm9kGU6I01qUKb7Wjpegf0MxLA_GgHOkCkdrcWRg6GPF2XKsMkoXyrBw7iJKy_ZWpegbleh7_-uI7oxO5RE2tgbcB11Zzi7GyEm09y1x9x8NY1iavC32nM_IYrHsqyM2te7AbLvERG8FTI-9mQ-lxGB0agm7PduiyiePOfGaZ98TbJuXn6H6eaWX6iuwuHENyzp7JTtoZ5fD1HHFNK-cZy0FS4i3sejgNQsaJimiSzObKZ2TtHNoiEJGmEk24kN1-pa6UPmmZdIdiCJO4dpnhqFqN2ez1_S9O-7cQ8UkuYgrxHy6S9pSfOK0NN-CUqEzb0oB6L3qLPtp9YvDIujiRXllFKhEH8qYY6BdghEOp3kJDIy5hrQkP5qvUO8U7_HCOqMkMat0KuQUDj9YVx4OM7kuFMpZOEXRHk_0BSSIxfGCAa33QFCkd0jeV23nteyg37ypqY1BctGjfkCW3uNoKBmiQPFrZu_zuU4idXmPd82PO3OkxkTDS5nos8qZkr00i3iv7XKNCXbwelHVv2mYY6h51tcNdm1Ks5YPSfKHoWY_QKCOXRKIdpJwryLDjbSsyzXu91zoYnZNKx5r8ztfeYi2xCkcgy-5BspYO8GRTidMFQbhoUIaOEMR02YYdan3_LgblkZHC5WQ6gZvk6xo7wKRDywdA09GHo18tjUlU6BRFcxHnuzv5JrI7nkn9zSIgMvJuiYAN-cN9hUfz4xa4pi4uYlapC7Bw19Hs5tTyytSKfn6-MH5oC588Iwq64CjdF4ngDwHklh-ojHluX8_bJXeljWCtWpcGoTW-exmTjzxSu4xvNup-h5xMMCOL_sgK1sGhDlUqigqH5Uh4rtAIrWcJp1Yg1xwrPC_Jhi59eI48HYiO7RkZrXm7qhHEZAqGD5NNNH4K4KpxFd2_CbjwovyDfNrFW3r4hU7xiqB7FkJQNSTlkRjEwAdikrzYFVvmwvuaN-4EqaFIWI0pMpkx-9HL35X2_ZjuXqKccPBhqPqFjyDwA7ifN4QrlbH0hRMFHDBzXh6qLyKa4iHmu--p_j-uqbL5QkjbnYZYKu-Nbkrbs9ill0TtKu_aefT60dHQkJYVLAnBI59pzDqVg4zqJgTUw2_SiXOo1U8JlvlpLL4SAYxF_5Ny-0Bn02LtAV2-71L417GssBFtzlj3YxkHY8MEsMhSKuyfG_rNEHIU7CIf8rOqDiG9Pqki45Vl1cQO9NiITOCkUH1QsZIOFANVxbTduX1Qze623rBd7EYaArtx7Vq5V4BJo1hMIywnaS9Hb10b--6_hqU-fxkKGg0Tjt7ZvfzJZzSAAyy0Ej4V3EsNTUC8MRxeJYVGdTOPV2m9iyZx6eg3PR3YfeOLCk9oNymqPbHa0hzYMAzHFYn2a60mhWzm4lR--gKFFW5L7pUM_uGNljhnSTSvscg3DEptHivXK6ujY5Sb7ZHHOjKJqbNWkiSeXDXkeTMNxyQ_NgHUq6m_Y_JobogRVUJyZSVIyboaGs9i_SWhadBzNk7IYWy7-xJ0-cpmEGanSXBKIRjDd99cJ2KDUkHPwiwNHcHkYIX7frTm9J32v5NIcyc6ytPiq3umdvpIQMGseJPTsYnQmehb2JlrvKt3M9f4xNgU-cV-lnefX0LHo92zaQtv6tUFfO3rSmGBHpVBETXrxVe3ftJf7n0XfYNspSsuAPZfO1agEKkermQESxMrRTdxxrjRGuNw0ZmWbsrFh92TuDjKcpTye5xYieY3mBxCP5U23eGA2LUI_5N2eW892NYAEBYOTU4Vd1tckkssxkYzCX5MOIb7P6UFit4Oo-7ubkIcgmZMwsBddA5mB8Ff-WLGMJW9KFSYXIFo0RE9gjr4c_naDs23Zj1cbVdF-UCg_bcu9Ib8j7oGUoJeVSP1mI1C59aBj16m9H6WU6QH8hGJLyxyhvShkzrHCyZHOh7GVhnuaWbHqPtbsfCnEOvuV-2WtNTTJ-CKllfrbcnDPe7kWVXL6B3rDhlUCRJyStVTVB5ZiWSh4uv1VGDTyIL3XfsYlZVChXRuCbB4jDbJg0c71a7ycWCLf1w78SQvbOIuhpTar87eQNCenFZ1ZSAU8iheYDc9vbvjdZ5BVqFrRaH30mQz5-n2Q3kv2mBUQW63pEFHGsBbT8wvi5gNnS767ued-DbGfqVxBnXYAgTt61IhH2hwChk-aUhaA2yAI2IR4-BV2uOwk49_rh_a7Hq5JeifOf3Te4D6SPFzEcSYVosvAzeF9LCOsCVvKTpUoHclblyvnH5tvrJpuW4myStINijE0XSUejMSIuWjVrwPhhEIAnTRBYWcScrOv8K4Y5HToJiXk4Lomjjs2LBciQnhkKNHZqYHwDEtMmM9q04HU-B7d8qV7oeFAXZng6kgv1j57ym-3QxClunWpSU8FMzNnMtq8xaPGB8g_GTKOfP2UBbwIxitf1RUKsfm6c84YyLP_w8yyKuYUSTyA4mMMdrMRw9sp01KVajWjrN_gLVHPK3BYE5obHWETxum7vgKlSOi6NzFrpYzkczz8JWdr7-27QvtOrWMCUElmmyxjNgxIGZNfDvEAdRLSWkuKHnqnDIDsbD47R-sqfAetzrkJrMek83OyYb77OrV91BZd3DJd7CubzQc7Va0KOBzUCB5CroRTU9-5AKRXdTEN0F_9_nzcOMHvPxr1S78D6nt-spaqzbrVPAmJWJy1LFlO7LpFQTJd7qt0jzmi2t2bqw5BGWYFUgy9FxWo7xUnDxaaQkl5TZVy1V3YAuTgNZJeKk24yKsJ2gOC9JNPdzrIGAZUOkwJxfZP3vlgduhAzJY5eXF73WQ5zTGMH2cQojurBWxVHCV3TMIKHCgKEDHaCTMNNTwekl-7iZHeOPxVjVo2fdQfJaM-mqXPRYex7AZ3atOeaEm3O9OaFKZMW2cMZG-ANMzfcTmYXMDFV6W7xaBFFc3aw2uo-M1rxNNt3trWo5fntrQ308pihHxbU9AcnoULzSj1lYHm6iUKzMlObaeqS6QPevdaptT37XEG5Ds8QWS-N1jrx4g63EMAhDRqDgzltxCcqxcKqZqMM_WTm-9PJ0sdGwxaR-i95a3zorMYal9a25actRwSmjE_61BLzovpX4u2uLNBJzKCIWucH8V27iFJjYejT704M4CCPR7FDJxcetsyAOwEc_8MCjf92c2LwkhPez2h9QRL2H_nv-2VugQWopCtJfgAgwG0AKMaTxeq7-ob856fr9IFEab5D28TNYxj_logK01kL3tnswDJjm22nnINM_qHCJA8BBdW0-Bxa9Hd3sEpuN0GhHC6q81qGCSRn4VjAqb2Zje0MedyuRieoMleQxwYFnm2r852g4hcyF9FvlU0wZkGXyWOtT0Zc3i-zpOKXu_mjNH04tc_UYdwVixVVQXmCETzIEEdpf9hwiP15yx9KUdfPQTVNqemMvrcyzWbTtVbgU3SOdw36vqs8kCQyw2hAi6431kteuAE_8mmMb0g46TeEiBKtKRy_mV2exqQ2MsSLM9wfgtfUKVlentXaOL9pYgprnH-oZvF1l3XCIntPU8IjKieazOo_PieKy5BdR8xajFHklu0bbQaiRaHJplIDx6aaBuwDJXoGwxd_xon8KyWCoaqp2N-KVR_QLvvshYEiSqe9uMzG5AXZyN051Sdw7LELeNoY_UHEA3fwf_jJs-uIsushK8SSd2m4v4xVPjvFsryrt0LfCXkiFa_KAlvacUNNwkTCWTCeAmKWtlHWEe14WtUrXz_LQMe0t0vkK-bL69pP1zybykp_l9cAZRhJMLR2qXn7ENVnn7SEBMknEaMsz7euAwDPj6soUNTm2Njo3HLchRpcN3IBI0RtihjDaLrBknzl5VQNFNUtuq6YfUBfmi7-6FTFTT6u48NlGokLDZuqyxbDg2Y0KwPbIIYJkLwxIQaQ3nhR4TZ0U06snqtkrNG599L4zK_cbEofWKQWEus-7mW45my_Sm9Twu0nMWQRIopsE3em6hdffN8iD86r-SGjBaKKF3J3SqwYFpobBjCS0KKRF0HMN0czaEbOUwkHNbo3FylfXGpB45DceeaVZOxd1gfVC-l2iuq-cNnpvwREDb0fkOo-YfwF6MM-wQ76BZx7PXCiqXJvp7YYfuuIGDifsYnnDgC63FdypqZvjTcv54NKWFYIS0dJKAprkD8YTuKJI3jMcT7e_m_TlNjtQqse25M",
+          "functionCall": {
+            "id": "adk-08e9c115-5923-4f85-9380-90da8ded5592",
+            "args": {
+              "general_info": {
+                "institution_name": "Williams College",
+                "academic_calendar": "4-1-4",
+                "school_type": "Private (nonprofit)",
+                "school_category": "4-year",
+                "state": "MA",
+                "city": "Williamstown",
+                "website": "www.williams.edu"
+              },
+              "test_scores": {
+                "policy": "Test optional",
+                "submission_rate_act": "16%",
+                "act": {
+                  "math_75th": 35,
+                  "english_75th": 36,
+                  "math_25th": 31,
+                  "composite_25th": 33,
+                  "composite_75th": 35,
+                  "composite_50th": 34,
+                  "english_25th": 34
+                },
+                "sat": {
+                  "composite_75th": 1560,
+                  "math_75th": 790,
+                  "ebrw_75th": 770,
+                  "composite_50th": 1520,
+                  "composite_25th": 1480,
+                  "ebrw_25th": 730,
+                  "math_25th": 750
+                },
+                "submission_rate_sat": "26%"
+              },
+              "metadata": {
+                "source_file": "CDS_2024_2025_Williams_V5.pdf",
+                "academic_year": "2024-2025",
+                "extraction_date": "2024-05-23"
+              },
+              "deadlines": {
+                "transfer_admission": {
+                  "is_rolling": false,
+                  "deadline": "April 1"
+                },
+                "early_decision_1": {
+                  "is_binding": true,
+                  "type": "Early Decision",
+                  "notification_date": "December 15",
+                  "deadline": "November 15"
+                },
+                "early_action": {
+                  "type": null,
+                  "is_binding": false,
+                  "deadline": null,
+                  "notification_date": null
+                },
+                "early_decision_2": {
+                  "notification_date": null,
+                  "type": null,
+                  "deadline": null,
+                  "is_binding": false
+                },
+                "regular_decision": {
+                  "type": "Regular Decision",
+                  "is_binding": false,
+                  "notification_date": "April 1",
+                  "deadline": "January 8"
+                }
+              },
+              "student_life_and_faculty": {
+                "student_faculty_ratio": "7:1",
+                "demographics": {
+                  "out_of_state_percent": "86.1%",
+                  "international_percent": "9.3%"
+                },
+                "class_size_under_20_percent": "76.3%",
+                "undergraduate_enrollment": 2139
+              },
+              "admission_factors": {
+                "considered": [
+                  "First generation",
+                  "Alumni/ae relation",
+                  "Geographical residence",
+                  "State residency",
+                  "Racial/ethnic status",
+                  "Volunteer work",
+                  "Work experience"
+                ],
+                "important": [
+                  "Extracurricular activities",
+                  "Talent/ability",
+                  "Character/personal qualities"
+                ],
+                "not_considered": [
+                  "Interview",
+                  "Religious affiliation/commitment",
+                  "Level of applicant's interest"
+                ],
+                "very_important": [
+                  "Rigor of secondary school record",
+                  "Class rank",
+                  "Academic GPA",
+                  "Standardized test scores",
+                  "Application Essay",
+                  "Recommendation(s)"
+                ]
+              },
+              "high_school_profile": {
+                "average_gpa": 3.96,
+                "percent_top_25": "99%",
+                "percent_top_50": "100%",
+                "percent_top_10": "90%",
+                "class_rank_submission_rate": "22%",
+                "gpa_submission_rate": "80%"
+              },
+              "admissions_statistics": {
+                "yield_rate": 46.828,
+                "admitted": {
+                  "women": 619,
+                  "another_gender": 13,
+                  "total": 1151,
+                  "men": 519
+                },
+                "enrolled": {
+                  "full_time": 539,
+                  "part_time": 0,
+                  "total": 539
+                },
+                "applicants": {
+                  "women": 8024,
+                  "another_gender": 184,
+                  "men": 7203,
+                  "total": 15411
+                },
+                "acceptance_rate": 7.468,
+                "cohort_year": "Fall 2024",
+                "waitlist": {
+                  "has_policy": true,
+                  "admitted_from_waitlist": 29,
+                  "accepted_spot": 1947,
+                  "offered_spot": 3091
+                }
+              },
+              "cost_and_financial_aid": {
+                "financial_aid": {
+                  "international_students_eligible": true,
+                  "average_need_based_package": 74809,
+                  "percent_need_met": "100%"
+                },
+                "expenses": {
+                  "room_and_board": 16770,
+                  "tuition_in_state": 68240,
+                  "tuition_out_of_state": 68240,
+                  "other_expenses": 1400,
+                  "books_and_supplies": 800,
+                  "fees": 300
+                },
+                "tuition_structure": null
+              }
+            },
+            "name": "set_model_response"
+          }
+        }
+      ],
+      "role": "model"
+    },
+    "finishReason": "STOP",
+    "usageMetadata": {
+      "candidatesTokenCount": 1051,
+      "promptTokenCount": 2108,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2108
+        }
+      ],
+      "thoughtsTokenCount": 2300,
+      "totalTokenCount": 5459
+    },
+    "invocationId": "e-3c577336-2ea2-4acb-928e-dd55f21dc0b8",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "longRunningToolIds": [],
+    "id": "bad6086f-be19-4928-9e3f-c02e24038d59",
+    "timestamp": 1767366386.076502
+  },
+  {
+    "content": {
+      "parts": [
+        {
+          "functionResponse": {
+            "id": "adk-08e9c115-5923-4f85-9380-90da8ded5592",
+            "name": "set_model_response",
+            "response": {
+              "metadata": {
+                "source_file": "CDS_2024_2025_Williams_V5.pdf",
+                "academic_year": "2024-2025",
+                "extraction_date": "2024-05-23"
+              },
+              "general_info": {
+                "institution_name": "Williams College",
+                "school_type": "Private (nonprofit)",
+                "school_category": "4-year",
+                "academic_calendar": "4-1-4",
+                "website": "www.williams.edu",
+                "city": "Williamstown",
+                "state": "MA"
+              },
+              "admission_factors": {
+                "very_important": [
+                  "Rigor of secondary school record",
+                  "Class rank",
+                  "Academic GPA",
+                  "Standardized test scores",
+                  "Application Essay",
+                  "Recommendation(s)"
+                ],
+                "important": [
+                  "Extracurricular activities",
+                  "Talent/ability",
+                  "Character/personal qualities"
+                ],
+                "considered": [
+                  "First generation",
+                  "Alumni/ae relation",
+                  "Geographical residence",
+                  "State residency",
+                  "Racial/ethnic status",
+                  "Volunteer work",
+                  "Work experience"
+                ],
+                "not_considered": [
+                  "Interview",
+                  "Religious affiliation/commitment",
+                  "Level of applicant's interest"
+                ]
+              },
+              "admissions_statistics": {
+                "cohort_year": "Fall 2024",
+                "acceptance_rate": 7.468,
+                "yield_rate": 46.828,
+                "applicants": {
+                  "total": 15411,
+                  "men": 7203,
+                  "women": 8024,
+                  "another_gender": 184,
+                  "unknown_gender": null
+                },
+                "admitted": {
+                  "total": 1151,
+                  "men": 519,
+                  "women": 619,
+                  "another_gender": 13,
+                  "unknown_gender": null
+                },
+                "enrolled": {
+                  "total": 539,
+                  "full_time": 539,
+                  "part_time": 0
+                },
+                "waitlist": {
+                  "has_policy": true,
+                  "offered_spot": 3091,
+                  "accepted_spot": 1947,
+                  "admitted_from_waitlist": 29
+                }
+              },
+              "test_scores": {
+                "policy": "Test optional",
+                "submission_rate_sat": "26%",
+                "submission_rate_act": "16%",
+                "sat": {
+                  "composite_25th": 1480,
+                  "composite_50th": 1520,
+                  "composite_75th": 1560,
+                  "ebrw_25th": 730,
+                  "ebrw_75th": 770,
+                  "math_25th": 750,
+                  "math_75th": 790
+                },
+                "act": {
+                  "composite_25th": 33,
+                  "composite_50th": 34,
+                  "composite_75th": 35,
+                  "math_25th": 31,
+                  "math_75th": 35,
+                  "english_25th": 34,
+                  "english_75th": 36
+                }
+              },
+              "high_school_profile": {
+                "average_gpa": 3.96,
+                "gpa_submission_rate": "80%",
+                "class_rank_submission_rate": "22%",
+                "percent_top_10": "90%",
+                "percent_top_25": "99%",
+                "percent_top_50": "100%"
+              },
+              "cost_and_financial_aid": {
+                "tuition_structure": null,
+                "expenses": {
+                  "tuition_in_state": 68240,
+                  "tuition_out_of_state": 68240,
+                  "fees": 300,
+                  "room_and_board": 16770,
+                  "books_and_supplies": 800,
+                  "other_expenses": 1400
+                },
+                "financial_aid": {
+                  "international_students_eligible": true,
+                  "average_need_based_package": 74809,
+                  "percent_need_met": "100%"
+                }
+              },
+              "student_life_and_faculty": {
+                "student_faculty_ratio": "7:1",
+                "undergraduate_enrollment": 2139,
+                "demographics": {
+                  "out_of_state_percent": "86.1%",
+                  "international_percent": "9.3%"
+                },
+                "class_size_under_20_percent": "76.3%"
+              },
+              "deadlines": {
+                "early_decision_1": {
+                  "deadline": "November 15",
+                  "notification_date": "December 15",
+                  "is_binding": true,
+                  "type": "Early Decision"
+                },
+                "early_decision_2": {
+                  "deadline": null,
+                  "notification_date": null,
+                  "is_binding": false,
+                  "type": null
+                },
+                "early_action": {
+                  "deadline": null,
+                  "notification_date": null,
+                  "is_binding": false,
+                  "type": null
+                },
+                "regular_decision": {
+                  "deadline": "January 8",
+                  "notification_date": "April 1",
+                  "is_binding": false,
+                  "type": "Regular Decision"
+                },
+                "transfer_admission": {
+                  "deadline": "April 1",
+                  "is_rolling": false
+                }
+              }
+            }
+          }
+        }
+      ],
+      "role": "user"
+    },
+    "invocationId": "e-3c577336-2ea2-4acb-928e-dd55f21dc0b8",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "id": "dc495379-3fc5-40cb-a4c9-724e6dd3a149",
+    "timestamp": 1767366405.194709
+  },
+  {
+    "content": {
+      "parts": [
+        {
+          "text": "{\"metadata\": {\"source_file\": \"CDS_2024_2025_Williams_V5.pdf\", \"academic_year\": \"2024-2025\", \"extraction_date\": \"2024-05-23\"}, \"general_info\": {\"institution_name\": \"Williams College\", \"school_type\": \"Private (nonprofit)\", \"school_category\": \"4-year\", \"academic_calendar\": \"4-1-4\", \"website\": \"www.williams.edu\", \"city\": \"Williamstown\", \"state\": \"MA\"}, \"admission_factors\": {\"very_important\": [\"Rigor of secondary school record\", \"Class rank\", \"Academic GPA\", \"Standardized test scores\", \"Application Essay\", \"Recommendation(s)\"], \"important\": [\"Extracurricular activities\", \"Talent/ability\", \"Character/personal qualities\"], \"considered\": [\"First generation\", \"Alumni/ae relation\", \"Geographical residence\", \"State residency\", \"Racial/ethnic status\", \"Volunteer work\", \"Work experience\"], \"not_considered\": [\"Interview\", \"Religious affiliation/commitment\", \"Level of applicant's interest\"]}, \"admissions_statistics\": {\"cohort_year\": \"Fall 2024\", \"acceptance_rate\": 7.468, \"yield_rate\": 46.828, \"applicants\": {\"total\": 15411, \"men\": 7203, \"women\": 8024, \"another_gender\": 184, \"unknown_gender\": null}, \"admitted\": {\"total\": 1151, \"men\": 519, \"women\": 619, \"another_gender\": 13, \"unknown_gender\": null}, \"enrolled\": {\"total\": 539, \"full_time\": 539, \"part_time\": 0}, \"waitlist\": {\"has_policy\": true, \"offered_spot\": 3091, \"accepted_spot\": 1947, \"admitted_from_waitlist\": 29}}, \"test_scores\": {\"policy\": \"Test optional\", \"submission_rate_sat\": \"26%\", \"submission_rate_act\": \"16%\", \"sat\": {\"composite_25th\": 1480, \"composite_50th\": 1520, \"composite_75th\": 1560, \"ebrw_25th\": 730, \"ebrw_75th\": 770, \"math_25th\": 750, \"math_75th\": 790}, \"act\": {\"composite_25th\": 33, \"composite_50th\": 34, \"composite_75th\": 35, \"math_25th\": 31, \"math_75th\": 35, \"english_25th\": 34, \"english_75th\": 36}}, \"high_school_profile\": {\"average_gpa\": 3.96, \"gpa_submission_rate\": \"80%\", \"class_rank_submission_rate\": \"22%\", \"percent_top_10\": \"90%\", \"percent_top_25\": \"99%\", \"percent_top_50\": \"100%\"}, \"cost_and_financial_aid\": {\"tuition_structure\": null, \"expenses\": {\"tuition_in_state\": 68240, \"tuition_out_of_state\": 68240, \"fees\": 300, \"room_and_board\": 16770, \"books_and_supplies\": 800, \"other_expenses\": 1400}, \"financial_aid\": {\"international_students_eligible\": true, \"average_need_based_package\": 74809, \"percent_need_met\": \"100%\"}}, \"student_life_and_faculty\": {\"student_faculty_ratio\": \"7:1\", \"undergraduate_enrollment\": 2139, \"demographics\": {\"out_of_state_percent\": \"86.1%\", \"international_percent\": \"9.3%\"}, \"class_size_under_20_percent\": \"76.3%\"}, \"deadlines\": {\"early_decision_1\": {\"deadline\": \"November 15\", \"notification_date\": \"December 15\", \"is_binding\": true, \"type\": \"Early Decision\"}, \"early_decision_2\": {\"deadline\": null, \"notification_date\": null, \"is_binding\": false, \"type\": null}, \"early_action\": {\"deadline\": null, \"notification_date\": null, \"is_binding\": false, \"type\": null}, \"regular_decision\": {\"deadline\": \"January 8\", \"notification_date\": \"April 1\", \"is_binding\": false, \"type\": \"Regular Decision\"}, \"transfer_admission\": {\"deadline\": \"April 1\", \"is_rolling\": false}}}"
+        }
+      ],
+      "role": "model"
+    },
+    "invocationId": "e-3c577336-2ea2-4acb-928e-dd55f21dc0b8",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "id": "b148146f-d588-4c7f-b66a-81923049a21f",
+    "timestamp": 1767366405.195229
+  }
+]

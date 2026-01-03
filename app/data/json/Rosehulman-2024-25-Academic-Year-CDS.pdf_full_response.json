@@ -1,0 +1,449 @@
+[
+  {
+    "modelVersion": "gemini-3-flash-preview",
+    "content": {
+      "parts": [
+        {
+          "thoughtSignature": "EuUCCuICAXLI2nzvrgxTwxnT93VLIIeOP3r_fprSIWCczfe4fex2OBfi4yBTeoxzYFofsOKBF1p0Yr0MgS4bvV_ldlYllWepS9n2jfHFarnF1C9OxIeZm3D2fcarbndhJ6mgoKSk7oU6BBKU1oD4HLnOQ7zHG26g-VkQQnR8FIMiVvffXaDv-Tnmu_iNQn30Wr9Z3xv3m-7O4b2RbxvJu6SkWs3OigKpWSaquyE4cM4XR9wHQnLoJmskiB_P5bisSeUYRJF3rd8ihvjw6qn-PSA5lQLKQ-GcaaL5uz80Wa_labhx84Yk6iMV0ner3hQ7eHqTwfXmgExXVCFhhaZmRTzpqbfWv2fA52QJugXDB8uYp8DDyoThU2u944IqRjrDcj44PRVYOCLyai7qe6U4qJ_ouojShJgvW5yL5jFLTVp7ZonndnyGx0gX7tytH2OEIsoH4sSwZgcb_KiOqz3CVS0mkdYwsaRs",
+          "functionCall": {
+            "id": "adk-00e31c0d-0774-41f5-be40-c6c548924efe",
+            "args": {
+              "pdf_filename": "Rosehulman-2024-25-Academic-Year-CDS.pdf"
+            },
+            "name": "read_pdf"
+          }
+        }
+      ],
+      "role": "model"
+    },
+    "finishReason": "STOP",
+    "usageMetadata": {
+      "candidatesTokenCount": 36,
+      "promptTokenCount": 1726,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1726
+        }
+      ],
+      "thoughtsTokenCount": 88,
+      "totalTokenCount": 1850
+    },
+    "invocationId": "e-e26cea1c-2658-48e1-8b6e-5774cc51aaaa",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "longRunningToolIds": [],
+    "id": "e04750db-2b66-41a2-838d-ee29986ca8f6",
+    "timestamp": 1767440703.060455
+  },
+  {
+    "content": {
+      "parts": [
+        {
+          "functionResponse": {
+            "id": "adk-00e31c0d-0774-41f5-be40-c6c548924efe",
+            "name": "read_pdf",
+            "response": {
+              "result": "파일 'Rosehulman-2024-25-Academic-Year-CDS.pdf' (크기: 388236 bytes)을 성공적으로 읽었습니다. 내용을 분석하여 JSON으로 변환하세요."
+            }
+          }
+        }
+      ],
+      "role": "user"
+    },
+    "invocationId": "e-e26cea1c-2658-48e1-8b6e-5774cc51aaaa",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "id": "d25a8829-4104-4db1-a20d-7b58f814107e",
+    "timestamp": 1767440707.026406
+  },
+  {
+    "modelVersion": "gemini-3-flash-preview",
+    "content": {
+      "parts": [
+        {
+          "thoughtSignature": "Ep4oCpsoAXLI2nyiwK4Znf92rYxQ11zVNo9YXBD7Ca_zPzW0N7cTcLpnidure3dWsCF2Y5fTTRbxj7-2_56SfWB13uy-JTXlVif0UAk1hVb5f6d_OW2ucC7swi03PZXvAqYJeYJIeic2wLOLrpKK04-DSO6MSHlrvBrPMnkrQs32D5HXPamvIT0EjGDon9e6JgOEZ20VrPfnYbOTPuh7XHydS3z6usVSGqg458JT4fVVtp4wOrd7ZfVH2g4m0PnLxhlX43tReRpaQeD-pAyL450GGt_7R1HDImHgRZKne7WRK_xLGKIvLBAqkPhBxaNEpoQy4h1_vv4lBR6wo0LZTWAxWQonfPeWqTbmapgEOJcn-_kLFReL5g-RqlNa-tl-ZShYxx7oDYwI0ouCpR7ylrS62BTRufxLXKZP18uR1ZVDjxaO1GlA7hIRiKd-qZTH8w9kGEQYc43kKxU206CV-Wt_dtLWxW5WveINSJIOSzgFGBNkN0TIU5HEZzLqHVsLF1V_utC7Vv_4ksZNJI3uiZazfL3ytwnEMaVGPyzlMFpL-gDnr18MgmlvTWnj291lGYSTGdG8KcdEa6554ogdtP4Y8BMOLPFLSFTXySrqydSSGynZiVcPpBLa1R44UlPuJTjFVHvCN3ZjsOHCl_KRynQJHSJDBtfPt6abuIjh0d31988l0fzAeFy2IKuxOT4PrDidAfqfrzyU5fjikoMPR0UqUryfG53H3oFSharKkx7FFJgA4RcdBKfxp9V_IayLDwb2qjOrUS94LUwubZls8IoqjAKY0a6d2HaJrjs2FlUds7lBrLGAJAxCVsOB8fOFMlZbmJIEfTJD1-2aFVfJggO-YkivxmFfBY4RdIogYWR95pFeea3HHK4thwGMfbLkmuYO9Jw1Gsy9TCi564KpO25BxlvJynF267g8PNNuaroRbNP_3rRt1fayvyBrKCn_QxMGtE7DmZORQQ9V8UJmi2lOYvDHPTPizyMT2Y5vHczta59Fe65CSXUFTBwoimUZnes4B2WeJ8eBaPjEzlN7EzChpAjhj-MeiVu6rCUlN9ii4ZGa6DPRSpX6ZOPJznW_KnCMOwebtxXXD2m3owv8vI69pxER8Vx5Twc6MPlaRIIQGuFGThLnLKnvjQ_2MSYIRlKUzMHOdPDZCMkrp0xydf0SEqAzXI7UYRIR1h-SYbjja4Or7EcuoTd3qFckL3FroWZocKTG3Gv7Nss1aklmZr4O2-gvXR5u8yeNkfSDSD8gctTQYcLLZfw8rRtaMTbKooa4s8U7wwPilW8jeEdGytYHObRHl0Wv3zUrqALmljrhSwO-WtSkqZZsOKcuV2Q8YOnp6P__B1Y_xU26IUYHWYPImmMZcqsaVKrdZB_8U_E1aDm5ExBzuC6ubRifAYzUrC4yZdUCIFEphgSU1F22ctL1QlbtbrmOLakLdZ0UvHcvQjOCa99v0k2iBZIQ5ZYeL8zcVoEuhuo4kM5XTxsdnHqhJu_jF4fpX2Os_OZX3f40xjxiCazAUpFzDj95SJcYzpa6zIkKd2oNJCy7lCSiW6kLpDsNtHLmnst8ALsEW461vx7Bem-H6rngGxCqkYLF2rMKZ4p4NxFoFqUz_d0cCCYyJE2ZKH6fe35SgbYgoiQ4yOpjwPPS8uX-kTwDdcUPsfP8JIVJytHY150MZ0AB9q_wLFCW4f7oJJ69IDFw1bAqFVIY3TT-NRrrKLXjPbzjz_TTUYc672vciGlo_vPyRCUa15drSA1kNIEA89EWFaEWqc8FQ94qJJEsAjjSkYzOAdiZggqM21zrOAOp8j43EYRpqV33wv8Gz8AP_6fdGXAUDJRDcWygvYArupUbiiiUIN_Mo2jbCi7eBNKJXLfJDQYCXFoHBhZBXcCxaMtOwzj1nqH-J_CoMvdgswePHa67qVyyLkcw83GgpIG96203KR0j6LHeq9ZejkWJmcR-l__tcz1rX12lqR1X5mXgp5D4ikT7AlU52Cwcy3NCUFyNTyNd6DhnoqZKN3nNOCt7mVGoc5DKt5r20C0fQr8ibJG7JhBNaXxPy6XuCXtfNgizqOSmni_FLGg5LwY0LsEZtKvuH2VA9h-ztj4iGqstxhWPI2WBIczw_OHPKtcigem4ObWbtkM_UamiWfU67JNVSUauFGxXtZqeB5ttuw5ir1HVlza83Cy9tu1nP-um_GJvfl6IM_QoAd6wOUVZ6_8lzwOmdvJa3LYUmqBUrv1D3pqE7LU4uZ9RzUrm3lkAP1-L4FS3Z6MXdAcbojMevuy9RWcv0YdeCBVvR5pQ5mEGDnfP0ZMuLFNf2URVxT4UtOV2sYis_LEqLgoLTMjlztCc6tcGBTi5EAaCxruXWM34GiM-YWHK9zWNonTceB0hONk2BFPZ4QOh3omuIXYjDcZzw6c8_q6-rmBZNNXgvBMeYlVPoD6j2YA4ktghgmuvYHWQocf_SQw-q9vR2mDxm5ELNdu4jkItEPbck7_rdQOOUFNVQOH663eGkCcDOetwNSFXbE4fT0NacTIFt2oaB1aWvc4flYLEqeXhCsRcwAGr_mPnGdUbgR9e9YMvmVxtyKTWzp6lBk8HICGJ1YosTsLZ5UKM71e3LTwIL5qq5wG9SnN3fEX2c_Fw9B-iBJkrgR5VNMfOSvCRFalczqapx-8vNSd-8AYGQNexR2wBwnpD9uyFSEgg6PJ1VeuP3m1d_jUfG28Nnn94jFwpyyttOd9DqKFXavyQZ4UHktaHozo4DWVfsIx_RI92bTw5XiiVX1TDuqRDNzbHUfZ0T5XZolM7K4WzhT2GWotsr95u3F9Cv6QBO6HxEINBryeANCni8Fx84B6F5ABALr0yJZEvHoSfojBmqLExeqadrnp_6CbvrU9mF2PI4iBaxMjw7BNEitELtgWveT5ZVx4ABYyYRIB4zmbts-yjZVNNOxwSU4Urj18syHGsmxYAHzFmA8UC-Zk-Ft_qlrn5wBBrnyENBjY2tzzNZa2LJc6YAEqwut-QnGDlx0WXMStIxSBz0iSiVu9khLSd30vm118H9KuqniQvzwBS5XhomMOp9GbvjB7Q0GoZ_6RgzXbwogue2dD60JQjjq6KTva6vepqLzi4ZmV54s6LkWqyP830N-aRS9ZJZYMpunIehYfefq0l8AYdVOcuzjmJnw9xVrin9XQWEi-pwQWTNPir1L-qh3k0vQt-GZ7cXVntpQUmHvoWK8AOuB3dJbOhO1Dl9sSG5yCgId8rv0iSbRSg5bzz7dNThVKd88ESpjK1_6U2EkiZlv8Y7CvTv3GEsgDL-gOa-365OyxAW7qI3yUGRQ34o9qO0jqiUs5EblM-48nWmMuG__B5SEFzN2EFVMYbwURhg6_HfBro554Al3tqnV_8ZsQ6S4_w43XVGYskzuQRun-JzT62Sc9T84s7XCGYo_UegrhpGTFSbaGM5Olfy5W4T_ttdaZklKHhkTGr8wadmDFJiO24ybB5Xqm47NJjMoy5m6FIQy7y4xoFwdz6BTRY_R0eiyDgsEwInJtBx-B1EfYlZrYkJ1o3AoT5ehs20TGwXd6VgvJYtK-lTGN6Nu5tV4Kp8WEyq1JO25F27wWwRQwmTOgkX9fO3Cwt-18kQRIN_MKhlHoEXGPJMFXI_xECE6zFGXMtUTARw7gTzBeHKGCTJG6GDOUM3FnNMUfjsYN9AlCz2OnegKeQpfe6ltCBGoA7ILhm6Ee16up8n6cwdQyYT1H3AEKyDfiD4Zrpy1aKlamVwoqdeOGLjL4r8Fp5GOn3oMiEY1hnYfX8OUzUlYm1EV4anXG--9diuTptfzFj4ZfKuKSk_7HpGa2GDYt-S6UArUXUODRh3P5grXDh3sAkAJth0moAxZFv4EO3TU7RBxLXy538bfL0Uhr4jjSA-TI_d9keAlWS0nV9gjeQCUCxtYEBROPRJFv9HKq1Pbk-GpKj5WTTkru17WZdCsunxZZABwj9UJwnNFIrhGaPUp9m3FvPWaITihvHmvtSutAvMCk_Q7o5Yc5MY82EF0pMIEpa9HUmx_q26OL3M_7tsJF33bKbTmqq-fxsQFURfvNbdEzhs1k5vHLjwWkkcte9kuw7xl7xyezUzJ_ZoWDwZcYGJjJWjipHNaPUwCo7acZsIdmEz5ektG7sdUJ_zpET8x1FI4kqsIthVNfD-mPtY1clC_7p6SlbjRKO-YKcO00iMSZl-9IUH_IHZe_hPpF36-YCe73O7oI4R0O_JA4yJifLGvJHnLZuGqsEblZ46J1D7Im7036Yod78RYo9pnwvw-qwvm4oiEGPq9-xjkqLvktzskemxMcYNeEI_MhVziU9sCzbD7UN0gaMyrl-7_rQdOPgNZZNMyme_kAxXexAXAksT8sgX7BTDH1ysCJ4ZGZXcN1vaRkP1xORGy0CpT7-arXFhYUpE81B7QTj63hcZrIHJCDpMbY7rPWel1g4U_O02SBWlvQANEvsCWRBIfCrQ2teC1Lctw0TthdpqxqzabVvKvT2LLWD8J2B2IbY1CweGj3SYHmJ3ESUYPyLZTRK4GkrWBnU3awGO-e9NOkLlAaaInjRtG480j0FtXdbhRpcEZOZrwPJh5KRc2eFthq33x0thedk8hFZEIOUbTmn4sPigFtX8AwXZ4fXN-LLl0b5XTpxsFXu5ZK-EUoSoM_FkWAVf5Cd3LujjxQ1d0jb2VE3Wav4JWuyyPFwhxQDYEmSv6PbLLUZnlsH6WZ48AugDxXVbtV8mTOg_mAV0qAA8XVZCk0gujdyiDBCmRMUMg4F0HuDXB98Hf2wq4jAj1G5Pe-NaE9Nm34RJ0N8Ws_ixhV6iDEi4et98uVUo6ONhq-72VnwSAofLg569BW_1Twt06bQtMElRiS-LbWw_y2tSLozYBgtlNIJ77HPIhkenlgRKGjUt-TwtPGwVxShb7XjptgYcCbhQHbzsMkRJ3M7rXYPzkRPWycDZMbhqbvYSl0kzBq0edhaY6MpBp5vMbrk9meX5-sUdoYwit5Wn546Mm07wnCxcJcYLHssQjSO2Qz7MfKWRU6KZaxGqVxJmqEomLRncR1jTgje27aVe01r18pM5Fi6plb5DtbPjeJ5Uvb6fkkHNQgZIdD04Dxv12RhKlel9FbFUPFIyMX2xX1pz8JKLmbHFCFznzOgSr-2OxZ3_Qhl0X4tHxN7emFLWSKZPdv-GmdAFuRPq9CWMN1CespArfDQVvbKXznxasD-gsc8eQrQQC0_gknJwpPCLFMsD1H8xOUfXzcg3QydLdqx4hI2ED2CwI7A-7hIVWGXDciugMpPtbcAe40up5feMxuiih4n38CJGQsJ-IvSXzqOfqfgGcwyMmfqxfN5Uu6dipsRlRh6NkNwbNwp_pyGzy9Oo0WRohAT7CicoJOjYu7cq6Htly1FWq2ZVqcmMK_dimJcB86OV8ily6wHKy9kteg0jTj_yMPfjTY6ePBAiPRgmjIJHs0gS8TuOY-8gaZkpug9F45Rn3mMn1IeKGqsruvvp9w_wl8T00lMebXmFnVExf-PhFfZPxg9aSpB7ISZDCE4d_NcPk7YpMLsQ3oq9FgaFf4fiut5c-u1X28E2QJ_t8hvx27TQJq1jCjwXQbPY-2HX53Qy1BMJqmloJ4ZB4HW-8qiSJjUXyYb55bFC17yEzkST6Dh2kRV8oIrOxi9lNPq1iHUxnx7MKYI4TlV7Xl937ethlhTn7BXYY9rEfJnrBsArtvKdJ_TTrHkpQ1wjv0Bf-Py0V1484UEPr513R-ookys0JafEbEyg6aMQf0a13QS76iOdlr1bFfxR49x3qLlXmrnM-gTrxiLoiDHHCfvbGJCGdpgWqkpLxlA51qV5vQ-0FHEDwlYAvYD16ylKIzdsdPXabAwsGe-9be-GluDAu98Uk73Si_NlDWZf6J6YrJ8vK5wfkURz6PyyENjo6zZI1hEXPEl8eqVtWRqyBfU0Gnh0YxC2Pods30A1fFRZ9UiaC5WuIcxUbeFEOL3uaCtiqalKUn-KP6p7XcDxy8r-4AjZFASleAnhSq7LXy-NwWEs0oPnDFXaD6nvR41labZIAWdY-LueetvoAEfUIDu8-H7n6C-4YTF1yWrre11YKaTAI9MXHgsywuPwWsENTuGrdWLuuq6MkTKaCFidBH3wduRoSr__qXTUMCDp8NRqi4_aQczj2TUCTtt6Qsi100erpJH43DuAKHmsBkb7X6zaQxoj5IfBf2xn8kCnZ-0ESXRlXayxFwgtd_-7LFdAQnPYrrGfiiRSJUFD2zbWov8V2kmZWQNClaDHOUXYEwZEoNLcTW4RQDM9AK87Luf-2tF6qLTQ8fXkk-cEpQjzgW3tpin-AiiezADT-kLd6d-m3lGsPVtikiLu053CscnbsRW7FFcdUmy5QB9pmGd4pQu1YoKDWmqcOHkbZVoQqgSMCh8ie-88IqfDcImx5XyEzDRAhSyEZvDsOaQUiaPCZzfPZJtViwha53CUjfg-r3Kj1BJHUIAbRuoO5OKMDbFQitcm0Xo2cfebDfzUryBuWCP_OdC6IqMlrRyVpeWt4QY5pgHqyWpEg6ud5JXm0dNLpRIikbzR-8Ngf6rCWMOZrcKa5WEuUYh99TDKYYj7mUfkWY1vMC-oBLVxDWQSaYMRXm2RZZ5N-og3xSwE82kYLgFDiaZYIo2_RIzHNi7yRgCpm62sshgtJtr7cGCds4eqwargukUZS9Qa8CtFlF5DrSY9BY0Q8HdXePYG3UPyxqiZZsNf3QISQTtPPfs1isxWP6amHy39rCO9aakO-4YM0hzJ_VcLo8UdFPjkvM5V-VNqENGaychJhZyGmlCy3GlC01k_KI4SYY2_bWKSPlE-oGQiKVBh1P1wU1ZhV2iKzBmx5U2b3WlZeo0Iok=",
+          "functionCall": {
+            "id": "adk-5df18ef8-d04a-464d-94b9-e03656f29aea",
+            "args": {
+              "metadata": {
+                "academic_year": "2024-2025",
+                "extraction_date": "2025-05-21",
+                "source_file": "Rosehulman-2024-25-Academic-Year-CDS.pdf"
+              },
+              "high_school_profile": {
+                "percent_top_10": "46%",
+                "class_rank_submission_rate": "32%",
+                "percent_top_50": "97%",
+                "average_gpa": 4.02,
+                "percent_top_25": "81%",
+                "gpa_submission_rate": "99%"
+              },
+              "test_scores": {
+                "sat": {
+                  "composite_75th": 1490,
+                  "math_75th": 770,
+                  "composite_50th": 1400,
+                  "ebrw_75th": 720,
+                  "math_25th": 670,
+                  "ebrw_25th": 630,
+                  "composite_25th": 1300
+                },
+                "submission_rate_act": "19%",
+                "submission_rate_sat": "52%",
+                "policy": "Test Optional for Fall 2024 and Fall 2025",
+                "act": {
+                  "math_25th": 28,
+                  "english_75th": 34,
+                  "composite_75th": 33,
+                  "english_25th": 27,
+                  "composite_25th": 28,
+                  "math_75th": 34,
+                  "composite_50th": 31
+                }
+              },
+              "cost_and_financial_aid": {
+                "tuition_structure": "Flat rate for 12-18 credit hours",
+                "expenses": {
+                  "fees": 1260,
+                  "tuition_in_state": 54162,
+                  "other_expenses": 2000,
+                  "books_and_supplies": 1200,
+                  "tuition_out_of_state": 54162,
+                  "room_and_board": 17589
+                },
+                "financial_aid": {
+                  "average_need_based_package": 38500,
+                  "percent_need_met": "85%",
+                  "international_students_eligible": true
+                }
+              },
+              "general_info": {
+                "city": "Terre Haute",
+                "school_type": "Four-year",
+                "academic_calendar": "Quarter",
+                "institution_name": "Rose-Hulman Institute of Technology",
+                "state": "IN",
+                "school_category": "Private (nonprofit)",
+                "website": "www.rose-hulman.edu"
+              },
+              "deadlines": {
+                "early_action": {
+                  "notification_date": "December 15",
+                  "deadline": "November 1"
+                },
+                "early_decision_1": null,
+                "transfer_admission": {
+                  "deadline": "Rolling"
+                },
+                "regular_decision": {
+                  "deadline": "February 1",
+                  "notification_date": "March 15"
+                },
+                "early_decision_2": null
+              },
+              "admission_factors": {
+                "not_considered": [
+                  "Religious affiliation/commitment"
+                ],
+                "important": [
+                  "Application Essay",
+                  "Recommendation(s)",
+                  "Extracurricular activities",
+                  "Talent/ability"
+                ],
+                "considered": [
+                  "Interview",
+                  "First generation",
+                  "Alumni/ae relation",
+                  "Geographical residence",
+                  "State residency",
+                  "Racial/ethnic status",
+                  "Volunteer work",
+                  "Work experience",
+                  "Level of applicant's interest"
+                ],
+                "very_important": [
+                  "Rigor of secondary school record",
+                  "Class rank",
+                  "Academic GPA",
+                  "Standardized test scores",
+                  "Character/personal qualities"
+                ]
+              },
+              "admissions_statistics": {
+                "admitted": {
+                  "unknown_gender": 0,
+                  "another_gender": 0,
+                  "total": 4250,
+                  "women": 1142,
+                  "men": 3108
+                },
+                "yield_rate": 0.1338,
+                "acceptance_rate": 0.7336,
+                "waitlist": {
+                  "accepted_spot": 167,
+                  "has_policy": true,
+                  "offered_spot": 462,
+                  "admitted_from_waitlist": 41
+                },
+                "cohort_year": "2024-2025",
+                "applicants": {
+                  "women": 1362,
+                  "another_gender": 0,
+                  "unknown_gender": 0,
+                  "men": 4431,
+                  "total": 5793
+                },
+                "enrolled": {
+                  "full_time": 569,
+                  "part_time": 0,
+                  "total": 569
+                }
+              },
+              "student_life_and_faculty": {
+                "student_faculty_ratio": "11:1",
+                "undergraduate_enrollment": 2118,
+                "class_size_under_20_percent": "49%",
+                "demographics": {
+                  "out_of_state_percent": "70%",
+                  "international_percent": "5%"
+                }
+              }
+            },
+            "name": "set_model_response"
+          }
+        }
+      ],
+      "role": "model"
+    },
+    "finishReason": "STOP",
+    "usageMetadata": {
+      "candidatesTokenCount": 1019,
+      "promptTokenCount": 1913,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1913
+        }
+      ],
+      "thoughtsTokenCount": 1855,
+      "totalTokenCount": 4787
+    },
+    "invocationId": "e-e26cea1c-2658-48e1-8b6e-5774cc51aaaa",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "longRunningToolIds": [],
+    "id": "03246616-38f2-43c7-a276-f3d1db3d5e98",
+    "timestamp": 1767440707.031505
+  },
+  {
+    "content": {
+      "parts": [
+        {
+          "functionResponse": {
+            "id": "adk-5df18ef8-d04a-464d-94b9-e03656f29aea",
+            "name": "set_model_response",
+            "response": {
+              "metadata": {
+                "source_file": "Rosehulman-2024-25-Academic-Year-CDS.pdf",
+                "academic_year": "2024-2025",
+                "extraction_date": "2025-05-21"
+              },
+              "general_info": {
+                "institution_name": "Rose-Hulman Institute of Technology",
+                "school_type": "Four-year",
+                "school_category": "Private (nonprofit)",
+                "academic_calendar": "Quarter",
+                "website": "www.rose-hulman.edu",
+                "city": "Terre Haute",
+                "state": "IN"
+              },
+              "admission_factors": {
+                "very_important": [
+                  "Rigor of secondary school record",
+                  "Class rank",
+                  "Academic GPA",
+                  "Standardized test scores",
+                  "Character/personal qualities"
+                ],
+                "important": [
+                  "Application Essay",
+                  "Recommendation(s)",
+                  "Extracurricular activities",
+                  "Talent/ability"
+                ],
+                "considered": [
+                  "Interview",
+                  "First generation",
+                  "Alumni/ae relation",
+                  "Geographical residence",
+                  "State residency",
+                  "Racial/ethnic status",
+                  "Volunteer work",
+                  "Work experience",
+                  "Level of applicant's interest"
+                ],
+                "not_considered": [
+                  "Religious affiliation/commitment"
+                ]
+              },
+              "admissions_statistics": {
+                "cohort_year": "2024-2025",
+                "acceptance_rate": 0.7336,
+                "yield_rate": 0.1338,
+                "applicants": {
+                  "total": 5793,
+                  "men": 4431,
+                  "women": 1362,
+                  "another_gender": 0,
+                  "unknown_gender": 0
+                },
+                "admitted": {
+                  "total": 4250,
+                  "men": 3108,
+                  "women": 1142,
+                  "another_gender": 0,
+                  "unknown_gender": 0
+                },
+                "enrolled": {
+                  "total": 569,
+                  "full_time": 569,
+                  "part_time": 0
+                },
+                "waitlist": {
+                  "has_policy": true,
+                  "offered_spot": 462,
+                  "accepted_spot": 167,
+                  "admitted_from_waitlist": 41
+                }
+              },
+              "test_scores": {
+                "policy": "Test Optional for Fall 2024 and Fall 2025",
+                "submission_rate_sat": "52%",
+                "submission_rate_act": "19%",
+                "sat": {
+                  "composite_25th": 1300,
+                  "composite_50th": 1400,
+                  "composite_75th": 1490,
+                  "ebrw_25th": 630,
+                  "ebrw_75th": 720,
+                  "math_25th": 670,
+                  "math_75th": 770
+                },
+                "act": {
+                  "composite_25th": 28,
+                  "composite_50th": 31,
+                  "composite_75th": 33,
+                  "math_25th": 28,
+                  "math_75th": 34,
+                  "english_25th": 27,
+                  "english_75th": 34
+                }
+              },
+              "high_school_profile": {
+                "average_gpa": 4.02,
+                "gpa_submission_rate": "99%",
+                "class_rank_submission_rate": "32%",
+                "percent_top_10": "46%",
+                "percent_top_25": "81%",
+                "percent_top_50": "97%"
+              },
+              "cost_and_financial_aid": {
+                "tuition_structure": "Flat rate for 12-18 credit hours",
+                "expenses": {
+                  "tuition_in_state": 54162,
+                  "tuition_out_of_state": 54162,
+                  "fees": 1260,
+                  "room_and_board": 17589,
+                  "books_and_supplies": 1200,
+                  "other_expenses": 2000
+                },
+                "financial_aid": {
+                  "international_students_eligible": true,
+                  "average_need_based_package": 38500,
+                  "percent_need_met": "85%"
+                }
+              },
+              "student_life_and_faculty": {
+                "student_faculty_ratio": "11:1",
+                "undergraduate_enrollment": 2118,
+                "demographics": {
+                  "out_of_state_percent": "70%",
+                  "international_percent": "5%"
+                },
+                "class_size_under_20_percent": "49%"
+              },
+              "deadlines": {
+                "early_decision_1": null,
+                "early_decision_2": null,
+                "early_action": {
+                  "deadline": "November 1",
+                  "notification_date": "December 15",
+                  "is_binding": null,
+                  "type": null
+                },
+                "regular_decision": {
+                  "deadline": "February 1",
+                  "notification_date": "March 15",
+                  "is_binding": null,
+                  "type": null
+                },
+                "transfer_admission": {
+                  "deadline": "Rolling",
+                  "is_rolling": null
+                }
+              }
+            }
+          }
+        }
+      ],
+      "role": "user"
+    },
+    "invocationId": "e-e26cea1c-2658-48e1-8b6e-5774cc51aaaa",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "id": "dbe6ecfd-884a-4bc5-b955-32aedc3a1422",
+    "timestamp": 1767440725.387156
+  },
+  {
+    "content": {
+      "parts": [
+        {
+          "text": "{\"metadata\": {\"source_file\": \"Rosehulman-2024-25-Academic-Year-CDS.pdf\", \"academic_year\": \"2024-2025\", \"extraction_date\": \"2025-05-21\"}, \"general_info\": {\"institution_name\": \"Rose-Hulman Institute of Technology\", \"school_type\": \"Four-year\", \"school_category\": \"Private (nonprofit)\", \"academic_calendar\": \"Quarter\", \"website\": \"www.rose-hulman.edu\", \"city\": \"Terre Haute\", \"state\": \"IN\"}, \"admission_factors\": {\"very_important\": [\"Rigor of secondary school record\", \"Class rank\", \"Academic GPA\", \"Standardized test scores\", \"Character/personal qualities\"], \"important\": [\"Application Essay\", \"Recommendation(s)\", \"Extracurricular activities\", \"Talent/ability\"], \"considered\": [\"Interview\", \"First generation\", \"Alumni/ae relation\", \"Geographical residence\", \"State residency\", \"Racial/ethnic status\", \"Volunteer work\", \"Work experience\", \"Level of applicant's interest\"], \"not_considered\": [\"Religious affiliation/commitment\"]}, \"admissions_statistics\": {\"cohort_year\": \"2024-2025\", \"acceptance_rate\": 0.7336, \"yield_rate\": 0.1338, \"applicants\": {\"total\": 5793, \"men\": 4431, \"women\": 1362, \"another_gender\": 0, \"unknown_gender\": 0}, \"admitted\": {\"total\": 4250, \"men\": 3108, \"women\": 1142, \"another_gender\": 0, \"unknown_gender\": 0}, \"enrolled\": {\"total\": 569, \"full_time\": 569, \"part_time\": 0}, \"waitlist\": {\"has_policy\": true, \"offered_spot\": 462, \"accepted_spot\": 167, \"admitted_from_waitlist\": 41}}, \"test_scores\": {\"policy\": \"Test Optional for Fall 2024 and Fall 2025\", \"submission_rate_sat\": \"52%\", \"submission_rate_act\": \"19%\", \"sat\": {\"composite_25th\": 1300, \"composite_50th\": 1400, \"composite_75th\": 1490, \"ebrw_25th\": 630, \"ebrw_75th\": 720, \"math_25th\": 670, \"math_75th\": 770}, \"act\": {\"composite_25th\": 28, \"composite_50th\": 31, \"composite_75th\": 33, \"math_25th\": 28, \"math_75th\": 34, \"english_25th\": 27, \"english_75th\": 34}}, \"high_school_profile\": {\"average_gpa\": 4.02, \"gpa_submission_rate\": \"99%\", \"class_rank_submission_rate\": \"32%\", \"percent_top_10\": \"46%\", \"percent_top_25\": \"81%\", \"percent_top_50\": \"97%\"}, \"cost_and_financial_aid\": {\"tuition_structure\": \"Flat rate for 12-18 credit hours\", \"expenses\": {\"tuition_in_state\": 54162, \"tuition_out_of_state\": 54162, \"fees\": 1260, \"room_and_board\": 17589, \"books_and_supplies\": 1200, \"other_expenses\": 2000}, \"financial_aid\": {\"international_students_eligible\": true, \"average_need_based_package\": 38500, \"percent_need_met\": \"85%\"}}, \"student_life_and_faculty\": {\"student_faculty_ratio\": \"11:1\", \"undergraduate_enrollment\": 2118, \"demographics\": {\"out_of_state_percent\": \"70%\", \"international_percent\": \"5%\"}, \"class_size_under_20_percent\": \"49%\"}, \"deadlines\": {\"early_decision_1\": null, \"early_decision_2\": null, \"early_action\": {\"deadline\": \"November 1\", \"notification_date\": \"December 15\", \"is_binding\": null, \"type\": null}, \"regular_decision\": {\"deadline\": \"February 1\", \"notification_date\": \"March 15\", \"is_binding\": null, \"type\": null}, \"transfer_admission\": {\"deadline\": \"Rolling\", \"is_rolling\": null}}}"
+        }
+      ],
+      "role": "model"
+    },
+    "invocationId": "e-e26cea1c-2658-48e1-8b6e-5774cc51aaaa",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "id": "fbb19531-8ed5-4a1b-b917-e0c36495d797",
+    "timestamp": 1767440725.38814
+  }
+]

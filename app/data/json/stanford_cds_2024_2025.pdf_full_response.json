@@ -1,0 +1,470 @@
+[
+  {
+    "modelVersion": "gemini-3-flash-preview",
+    "content": {
+      "parts": [
+        {
+          "thoughtSignature": "ErkCCrYCAXLI2nyvO_aPWYxV0_fxYVj3ermR2OfnPQW5zBPn-7iUbN_G1YRfSw0mfo-blznVP3sIjC4t59U4d1Bfxt8jKlz4bv_nnRf0ZbOY6PU4LI9qCfXxF_17zvGIWhJfvmZv5b0RQMTKPmS0BRZR4v0GsbTHFB80U0VOxCNkBBJa8RD5cLRLj9Hcw1S7SMTtwHODIP46EHgynEraleC4zWjIgbVDX0sz7uprQGS3586-19oqEpqKSAfg9P0ApJ93bVp5Nn9iVWdxkK4kUjozljV1G4wD3-6VyS6zLC9mQkufPZEwHdyqwE4CoJREhkwgYUoDSMZTAAxuaapKBNyiRi39hmUZ0BNSWOvnhq20GzAOl4kncpDGM4xHV2keNiQrs73_ncMhLaWIlwURR851-vQfnhaLyrroWg==",
+          "functionCall": {
+            "id": "adk-01503e19-bb00-4e24-b62a-3f00d86a5201",
+            "args": {
+              "pdf_filename": "stanford_cds_2024_2025.pdf"
+            },
+            "name": "read_pdf"
+          }
+        }
+      ],
+      "role": "model"
+    },
+    "finishReason": "STOP",
+    "usageMetadata": {
+      "candidatesTokenCount": 32,
+      "promptTokenCount": 1952,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1952
+        }
+      ],
+      "thoughtsTokenCount": 76,
+      "totalTokenCount": 2060
+    },
+    "invocationId": "e-59ee71e1-2f83-41dd-86a5-b9deb51cdf51",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "longRunningToolIds": [],
+    "id": "455d2a29-263f-435f-899b-bc7b347c0cff",
+    "timestamp": 1767366588.479468
+  },
+  {
+    "content": {
+      "parts": [
+        {
+          "functionResponse": {
+            "id": "adk-01503e19-bb00-4e24-b62a-3f00d86a5201",
+            "name": "read_pdf",
+            "response": {
+              "result": "파일 'stanford_cds_2024_2025.pdf' (크기: 396298 bytes)을 성공적으로 읽었습니다. 내용을 분석하여 JSON으로 변환하세요."
+            }
+          }
+        }
+      ],
+      "role": "user"
+    },
+    "invocationId": "e-59ee71e1-2f83-41dd-86a5-b9deb51cdf51",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "id": "55d62622-f842-47a6-8b7e-c5627f13234d",
+    "timestamp": 1767366591.831494
+  },
+  {
+    "modelVersion": "gemini-3-flash-preview",
+    "content": {
+      "parts": [
+        {
+          "thoughtSignature": "EtA-Cs0-AXLI2ny14bn7QhVvGRW9aGXPpvNjT_-CNIq9QERVGVPurCRwZiGwvyHpg7I3CBKAxKhiIWc3aO5GzfSc3uAcDH58fl76Y2DCS3lSM-NvbTgmbLbcbJohQ0raOvMteZE-RnSefUcWMRb_SGVJq9ha8q9tu2BMTNmaqJGFoFzj-H_CGKaDsQhhU5Ui9kDbP7AZLnzp77pp8tyfmQr0UwPSfYwKq3BkUabXqT5ZExq7I4aaWmI9iTO90pIUhljFc0X-btCoS_yNUYjlLKLbD5VZ5rYgrFNYi3K3UnQm2pX5ybcpZTEPAQYlmzKLNGie7T9zjgpdLfkOuZnBIh-nbkY8EvDJoHmGBWnfInKHjqlRSkJJHpG3Drm84xK4YD_luS1WeO3VTxJW86juG6KHorTQo-5mSxwDkWF_zA9rngVymPXupQCRwd4vnaXYUyZeqZn4CNdisKVwbJtTirHvfiSfdrDO0JIEKPzUS97WtFi08d8ZfquztwayG3Wh34rq1gVz3OK4IXVvxxrIk2cNpFxXyD0Zkvef4Ble7-3zqkh-lsQR7M4r1PSm_9pxRsPsHs4fYYF8ONf0undiVZ61W3wPPXjcpxpFW3RZJ9nrBxuhjFBEVRdueJxSj1raj6jL4SmkxR-NL36OGkO6QwnAziAT9Nad9y7ihLOTJZtPOFQKSJuvo9c7rhCsgvbt4xwHSm0jUqPeTk6NSg_S55oLyBkTiN6HOlsZ__xvTZYEex3Xzk24MV-xlyKKt7BQ3Ebyu-EdI2x-Dc6xiEdgCzoIwBlErNusaohfL8maZIS6cz70RqzJGE2As__Vwn40WizcWPLzU6y7nwEasmqX92fJOIh5N9N7GzqtvcxEXuLgMXiJiuaosGl7B0rRsYR7JdwDwkKIXJUjC5DMlzhAVfn1FnbcrgMIwu9Y3dAVPf3_a9ZST7jDGc1uH4g7OYcmlI-y8vMCiDadrQgiywIo-xgGDNSN_T0vdFwTIACmmfy7VFF6mFm3ffMe1L6quA5iLA65SNgdtleuaFRaYPIftBBfl6s9qeOwOdpxgsmssYvhS5URsU61QS3XvGEb-E_ZYR5CFctk8q5hX_T1DpPk1Ea19_kIiNOc1bFByZTJRbJlsuiNqiJySNLsb8ozXKrbYAzQ2WTBiPQiuSIww8rKdElXbn_9mcsnxqRYbSoj96nb66wdzI9Ga374ocTEu2DCimWORhCOo6xYGG1zusiIkOjBaGO-3r-N-kRCJFP07ioQjA6AaFqW0bSiJQwABkFQKwltrEIOjXIgZBiaxDYqOkqUFYCH6gIV4lolfgLsRluZvb7QfFPW6DUwOzisKp3-WMHZ8SZNBXGDo4hS8HAO9omlq73Ip732iVK95mSohZytxtY7kEqXAcDaRLGbDF7GPtvBbsQfJlI49444-rGJmCQjPzEWsqlT6Lb2wjKkXg1fPYYh0rGD_fUA1rHBnAH2t_E0DnICUKcfpTZAkNABDBNIsyaB4NY0cXsMIVFUemQQXy0sBzATsfJADEhpMqrp2qIaGr5gAKBSU63nBr7CRvhccrYVO0U2R8_ewgqkDlokvcANRgMJq_YUHVVIkAlhhpx6B6bqrPT_GerHZYmrgGDZikZ7QMQwzCPuS3Dn1IN4iMMGt7eZQ3PxKb3M2S26tlPnWhD-nPUdMOJyFfoluvk9SBPo1EPZQVohWl4O_5e0RtKgCOPD7pMZKPrnYdZUM5Wea7uPpjzh28LovPUALc3n0Q0hcHbc-A9Y29bZy6pbOlfaTlDbn8OqnOKSFcTUWQPGy2ShsytV1A5ceXaGtE9bEaVXVmiWKwszO2ZhP6oFrNXHgzH0MR7VEObvoUU5M1aNCmwt1aW8Bhl0ON34PSJ_Bd_lI2I1BVjcDP2O383IVMTQoRM-L_w6Bhhi25fRU-fUcg5nRFgv4rkUY4pOoVW2HWFa53mbGw4WHaP9-OkgpXhAlM8dSjVnDSUcaMcHLYpARwURLdKJdR4tPHbZRjrSISSAPuSwoCDs0g9B-zzthE5m_YTLo8FPqlvtyAlMeDuJES1jN3jrLB9rtVsCnSOWAWdbt17lCteqWEwIa9MJdbSp-q9vLn1zFYwqeb-VaEwmV3y79gIjiDADf-aVIGM1euq8YM-9O_Jv0kKRzTD-V4w6cyO3xdd7L-RgKFVvlJwZW241liEXhEI8BWOOC3izH7SOuK43LK0clqzr81Qk0ZdvemeUYxEYQ7GjGTagE7ESBbnM8uJdcS-MQuxiEv7DGB3g6YPh9bdAorQPl8zSFUOYJABvesttc7xCaMLj0jUaM81y9bW5Ttoz4CScCCmuVd4vrMGBZOS5RF1hFmRKXT6vUj-VfhyiADOEnAoBwFwHJ6ZgQL6ikx5u0XbO_JmhLrnFtsghC3475RGLNk1w_J02iMVJKpB2ayJlno8I35xdI_IzoyHMlT7P7PF3cHlQOjy057_5QiP2Gp9AEsaznNa2LeATF149tKapE484eYH7M6sXNJH0MSk9Evaogqe6Zr95TkGbPPzSgUtOdr-cDTuXf_BZzBR9s7MXLmZ0Xu0gv7sP1G5MvBsOvRlW2D0xOf5R7tg5h-EaGhil2rQPvbutvTjseZi7fEjVBQ3skP-DUlHHM7sUBxKpRWMdlNQ1ICaQfcwjvSGxcgKIrjLcnVM2WGopya9CGkGM9JKSOy2izo6cQuTQxtR7pNWlbGcDVt7fi0yFgYUiiJwOV0WyQ9Kiy-IspdSkF9iXETiSNDZ3A_TD69-4OAKQDkZBd7nae4mgBcMMV1a8tUSvb5vXEZeW0ZU-bsIv2UzsCtnyk-zv4rlPrhmg83QvVrZ4fDlAoqCsf8aQ6qPf8GwBxnPvFgZXaW72rxG7GWBUa7Msx4Cy-FCgzXmw9ycm7hq7WF_NH9SbO7tpMQVKrh8Jl7UuyacmGGvjdkVaX_xXuyxNXgRi8Mez6kCrNQ2cox-KUGAGDetcOzYaBKEsgEGVrm_3aLYuN-wURTlMzVWD9T4XmyLMKi5KIC_wiX05mr6-KigkA5OZokVSYC1mOnDxFtEGbJ1wNb_QcKNlZMUzPIe2EYwR240dZ9llRHWyZd83npDYcL56JmxlrQ8ZRHGw-aKczSvTWwS34yCOcZtqe4FM5hRV-98DGR01Y6DrFF9cVRvIef4vbmh-eKQB_Oj1vKF2F-xXN8tnQkd1H60Vv7Rhepwc55fmUjvawFREzkJWq1u8EvnPfx8X-3EzEQrdlgQHbIIskEBAwYGdIGJ61NMzy6KgXk7_UXReX7fF5Qcput1TS9wzqBZzNv8XZBYmKLs8OHsgohim-CzZMCAe9fnfYu39VU7VBvhnl4M0WvQlRH3UO82a8mdqr8VF2Luz62c5Um5H9uo2YPI-K_DQ6i53MdYarYUnE27OxnesGl3NcP0p0bGvWIh65X8z7gdURUdTiaRNvAfFXO4-s4aPQvpJn5r_OEQVdfbegwQ7X0jY3xuWoLyq7xkGo4BWYg2yDg0g1pGZUsM8tLdE_OxscTFB88b3A4HA6O8zBmT35KltSxy-5hgJYVxHisUaoLyuxOPHlfZmhh96A8RAQfItGtm_6b7YSJOD98lAz2zZTD-b15vShaoNFOjkKBNHIv7I3Ej4b70a_3rpUaEeLkE3VEaqEoPTBuQS8I8ZCsHbN_yAYA7AVg1EYu5AIFJpxi6HpkZNvtEvAK65BNjJTj9Z3v2WxfBaedku1MKuocRRZhe1ZpKWahtIR3mzLyg0UAp4YmPNK8lNLnnHLMbaUGBiWiwqajOh06VICNPrfCjtuqNWcRnkYhvenY0OUGQ741msmPJTlr7qmgQcBVgBf7xKv_8vbFIMHb3FFIzvyqo8RO01ATwon3s6dx8HcxXEFKbIB9QzOwJhgOFhzQLsM3oo5kL0DpYAhrHk-xwNBnVNJegrhpZgFogt_uGqwGhQ-W7Zym7DM6EPQz3Xa7hoIGIoSPYH8gks1EhmTLhOGx0XiDUjBo5XqNra77eBJwiMOZRgCPum2zfVa3c4RQzSQhJHpUeAK9u0w-ErWfpeH-cBjRqN211Mfuz0ArmzVpXSeKeJfIJmPSXIzXkwQOChTP-hWk14YPloOqLWAtLvaJFHRMbYU4f3QGnLsZjQJpff1ZyzGH_zxJPWR8ZuML5zo2wd4AZtbUkegYxtOnKvgbjPfeJ1ZQIsnykiN4Dho-8q3CDIoDY69eCfUtR9-kvVhNUaVNjvvovXGtJpY6chCF47EF6d2V53kHplFkdc0yCkPb60eXKtnbHnZD_bG0HmFpaULEmwvkQbNYg8Z17VvGeckKGLD08zv5ePFahvNxzTl1SL8SirgyTNkg_owFWDgfqFgUkDnCTOSr1sGJyETtlWUMKkhRabyak0swHJ8r35Wl0VpHLu_PIxxblsn-zbmbfTkxvrpaqyiP0zW4mkBFnrieF11oe0NUCdDmvMnKLU0LPIPy6k_JOou6eE6ipYTLaPs1pUHlPxSakavDlTnIb53bRBLLsaiHNABv3x-UNncOrF_Ign48SrwlhuIXZGXHu3oZTCFvoFLXJ4T2CKqkkaGZpsIQbQ9otDtWhNyv4tCTZaugBaSBGro6oywAlPOkkpTn4CrxlK-Xvgz0G7sZPX04EKrdNfTHh7BsXA-9mjY3V1rJTn9gSenFPK8xO7Lk5vKe_Lggs7Dp_koE8M5c7gQNsdJwURZQFMPGgKadhm_3DLlkTrOkzSgpjoeZH-ZUvYcJDd70Ev0mTIQ5ikpNKzG1EQWe5H9zMzCqqxOWQ4RDV9gFjZqRXAySMQkqofDs1Jhd-mE8GIl3zymiyQ7cxNarcaqYQ-W-EevZQzs-4q0xxSVhCOj5YL1k_e3ckyYOZ2Pc3GF7ONAacau1yvng65OB9jDcuKDqKkAOQI8iNI54RUKJ8dfip2XQooMLUAZKFBVk4g6E_2GhZEZ56zbwn-k4yKiuuLInNkOEtemL0ZkxHeW4iO9BO9FX2LwxismALB57WXJMpNbdi19beqocfdF9bOgfhwCh6dPsrZDa-WyN1aLbS7UN7G7aaUCf1IaSOmM7qU74rYMGM7hi3lfalAwXchiUdUjIxpZ8DCr1qcrQq50qUVLzvHml786TjhSKf8YMjrUqyUg983xrinyqosT1_Zqq_2MdGE4BohIpM91KP6rT_U1C05VZrgQg2TSxVTADKZ2JobHgFC_CDPjlbcCBohp75N30CUZczKjLV4Z_Bn3IMIr9l9boLj_cahJUyLu75c-AX0fF-Ik5-NKi6I8lX3ONK74qYa-XhTR1W3hqIOB9a-Q64bdSr_HcvVxvGUvl2T4j0uwsNHDpNZhj2tff6kHpRQ0DJABOqOjgl2AM7NnYhcCQO8-4teAvv_13Q3LWq-EzgRvvjcd_6ZCtuf6SjCh9VQoLravuHRf33N_bhyUROOvv_YFyArgNJN80t5p2GbuGPQ1_WWokQr-T2gC4ZZEgsCqt236Gk_kPZxtsuZ-NZBXiLre8ILRy2hkFOtN2L9fT1yk_rwdnuit_WcoVeJvj29jVoOeG9ACckXFVP0JSL-ys93xWqykJFBDtk_Nhro0QgFyC6bcfFoI4T8rzdZnRgqYHiaAkZZJ64pnyeiQVf8ss8wu1jFLgaY3R3bEoFyA52F-w9RYAfWqJEPuo0CQHcULiCGBjz09xwjNlvXdBE0UM4b8-ve8_YuIvteXTZHVA8u5FuLbtVcs7Qd3PxrsRnGwAAkLHEapTRG3Sp1-_xAsJUwnBnwHTZYFMPCAyTHS3nxkFBLqaUiuLUR7VyBIkmEsE67M5fDun8hQqL7FREYbrUqipoFup1ORESFPzLft-_nCsaM6EuMWJGp_TogsQTriBEKccYnTs4JXHmannFa2-uporTFSIocRWncJb2ql4Klu_s7niRZDt4-ERSr1e6uDY7b6RO4l9VuIZvRL_GhNwGGVy_drZ9qggUNULxqTu8PsDFLIakbcUSOltZNQcDjUBMGN-IzMpa44idZKEUz6gICZLVCVJBwdeW6ehvUP6oI_NVFAYnxqdxmHrepk7OUnRNOYalQLpgw0XlIKfy6XpyvDo1x9gaWIhRPWEhlapCeRcl6DvmU7JwjcFJlPNRoErxXlUIfxRo2-CnHFvw0E0goOEKQUQU67db9ex2PpCXNIoj_NpG1Tnd1NKAof6p3Ej6a7JwR3QAGo3-FqEsb4WiH4vXXPZEz5sw77ak5815ECTZBtsQ2RFihP6ghasfy_ZGdA0UeZHGLkUR29Z46vyqE1tTX7o_zjuEgqh1Vr2WCHSmdSxYMlxjQFWb5E0rDjgkw5hml0eAE-5rhadT41ZUcqAs8u1b2TeFq_fXqCl6blJq8ovhbWMkb5o5UfCxPvbGTRjIWrDPOyHwALgpicq09e3B7FJP2370siAgeTyI-6medGVs_CLUo1SialVkWc852X69sqjjyPtGYeYE694XquL_M40n0-S-tw1r7bMkzWhlm7MfpwwNjiypbVulnk2cP9OgQ27ym5p_run5819nlY-IgCvn0894rRdmgdu1_VrzMCOtK_LHZogtaDzZFE7MLcI1kwQKpUaWMNfNlqZp2uHn3LWVaGPPQL_Ms3mpj2QyAVq8NCQYj2wFrC2BtnpJl_3B5ex4Qq7WXY_FlIoFxOX9q3-SRX-Aq5CT8nzHK5QvJTzUpRKQXEtfV3jYvMJbQUy-QjPUn8YnYbXcrwJWr3Rl4vNByFUDmoY73BhkNcOtVr218xsm_G2VjNJdNVhZQpd4hRNX--XNLOVfHV3wgxr1MYntym4AgIdrZSjTOpYFkNiXX4hIpGhpBGFUdXR8UO0uB2bjZbUNc082Dwd-YRDzeXPuKAC7Ni7CXeEQk7I65nJFuUcr9xWnRNPHBRczEanbZoUdYyyzygCmCNQRPeZBT7jOZRCC6d0ZeijF70MaLPhPbNex12nhFzPfxDd0GnjZrIuDvF4qZjHCKWxh7aY__G0MIdBflr5zpKmUsKTgeydkqHpRT42mZ0eupESCBU0IE1TVxtun7te-fd81J30CktOjjrGe1wCkRMknzu12Ha6itLrlc6ynFstqzru4JA7iRu4P1GGYoz7AivctsaSvTAyPFazdIjbc6ElFIUbX7QiCUmaH8Xzjvj-0OezQbNkfXQZGmo8-LT0OI3gATYXvemKNSjPFtT4y7M7lrfpICUexOne2fchjAQCYaHhZ0r7SzIZNzl1PKO8EPg_aOZAt2iZRh89q3E-oreN4KGA_ykehz0lLj1g3rIYfKl7n1j7RFiWitYdUqqf64tFZgHxXhPpOt2kSqfkSfKluP1-sPKI953pTNv_8s1jqNtUWFShpNAcnPxKNM9k1bVbJtYLeToBFhUN_LN5crR_JSwEhM01E09IG216mNfQivAptVkE23Y1SInVSzIOalVywKzeOf7bIfnXh_9DSZKIyRr0BYiKZOIpJg1YWuZTopJ6dBOwqCvqJAUj6gtWNvv2EopI2tr97mEcEpMDSJ04Mn3ucNWTEC8aQ8uvQmZSJSQECXZWctHJcOjJahezi5UfXJcwM0ErN0ZlRcmHZFP5kWKrJKJfa9Z5fcgGB8ccqcJ4Lz0wB-zeizuweA6XJxJb5ZwRh3C7YZLWep6-ISnuBg1YFaOeOXqKy4-sDlsFtHlox0ZVhV2-ymA5RbgmhZswHtHKTmthP3ZE267APBaTAz8FIaB1sTe4V1uJmH54kkzC5RFeRs1ajlLSw6Ya5YLercU4OD0K6I4cHvQbo2FapYj2aue5vsk4AQOGT3KOT1srF6naM4CIhn6YOM6zXqbwHQvss35gSShnUlzfcObi5F7dF0_niElAHi8P0oH12mUiWaueN9syXYAEzAPN0fHNykMY7mH2_lq8DcRRnEuMRcLAyUp1c_NllcPvoky0Cfz3fKx8Ybh1CdS8TTdr3Xg0nmhz01qrG0XFmAySwqAMax3e3KDkak65SZNv2Ez-8jvvBW0C4v0O2gGV-Rhnnn8ycX3eecAd6NbFHThC3atCLkYQhaHTgSDTrc12p5Fq5kdXHnAPgLspm06F2bMLO-qiDYXF2qFQ8PXF9mhmP0UqwJkBE2MQiSk4Ao_cIp7TWLfEHquLIBTrZfqcN3j1WQ2ZUXCHi2tCx0GaFjPVEy3zt6wxplD-mVJ1pv6WwqQs0zOvkvF9ZJ0CoNP0qFlkjv6hr9XqsoPiEQIBgDPVO5CKDwWJGgT3jZAs2WCI8pA2bbFuhWJZ7TgmUIwkrdKkcuDcJKaTVsrFZzHz1TakDt30dsEnxsy-hW6PEVbqOb8frdvWKUOy-nthNZEm-tWHAB_NuykugQsbZEHuWvlLZChf21uxmLltBD9yr1wUFSoZnB8BLdNLrxR2JN_ZUJX-227YpBq03vYLIzwyq8VcAnNs0eAlg_LOxhEccvwL3JR3yq0j-6T5URjCRgKKjOt3h31ShydCUGYB1MdGSnTIotjkv2LjyY6lFTS3xM8vnJX4LDd7jL2E4JtU7Ra1eDucHz4ju9Hs6tQ1uCstHAflrNFj-lkLLkgB1nC5fBts4cQrDZwh-48lWm_nsGv0TMk6t2U5XEGn9DIHQPWe_KySBfDBCAKr54iZKYJU8qxmiMvUkfH_4IXTgSVHHgH6ibJThFV7X9p9xlW3Xa8XZa-k1EJCe6YO8_UcjRC40-pwgZ7o8iqgBnqTvbZTYPlfHDu34zNYDRf97iGwNKxAgRkbdKt_h_012jvmD5dGJGN2ZBggOvK_P0kKsdUE3RoFxhG2NGABU4rPrCYXpjTOCcqOMAl5RXa_uOvEjS_2wox8kNGihbTKqH1xYx8lRwjY7QFqwUBdMU-zY9HwvmwXa7_ac7XhWlqHs5uT52IYnsIaUog5OX2a7MLIb5CFJaLlVDYTTP2Ry6KtSPeK6SChJZ01V95RbA-0lfCVlIks0WKmmSv-swaHBPNqgsP_fcbybwRdMet1_I4joR1jGm--QPh15DlxvWi79DAAPyspWh5QLTzwUR1zGSnObBr0YVYPeoQZX_4nP7lrSphSdZAUkUZ9hcUXnXqKS3ItiPco2CCYo8mpcLqHQirWfMpgAkzb-ItH5ZyqDx3yZIq6R8GoOxwVaadfHNzPw-zFrAJpYFYOQrV2ySkPa86kQHcikuNRxrFAc7EvZ4P32V8HWtC_5rT1u7fx5GmmkilTu8lcZYMnDOVng63T0bUeO5uh4FEdDkiD26gd0-hqUQeMLFFHm85KZLWCHID6TbUHekuj8uTuDucg-qqNstNFjyjH-lAAlkaevPvfe78QBJBESRB3Gq9wUOiapYZVOpbM5psxzNnQ4G5uHUkhYhNG9b3Vw1T0cwOslORBYIU9OSU2uUcR1X4FEzK0GbC8ym0x0AB9ol1PdrL1u3Ajc_XKIMriNzKQRPUeYdPRGovEUI6ArRKU23lNcF9uxrHu15A9XWMX5wBzn0gXwDqDrJSB_dPQdmdupCJ5B3FgJgPqHFoLeAqyn0vjprvuR1H8av53XMgUU3OVk5cEuPJWfywrjxSP7m8jCGNZ0SFoGcLEo2C-IAnE1iH7C-P2otZmcHahgRB_IJd0oneAxH-_POL_lsxqVv-j3H2Om0Ik9IqmoJhkyzUYd7Azn3__o0JhQjBoB47NNz3xlZDDwQjCrQ2P8BAI7u-_Q40em2BzSdRRvip5-3vgyikiTIRIlyqCjiW5BdQHPxlxCWwxj7gILwm_8i2pkxrjEMFL7b6zzIdEVj1emJfx-RUDdYEbMBVp0JFuto9lEHECE0cn0pG9v0je1E6p5ixcEZxonbWNXLBt4mVe1yLgFvxZX0PVpMRin9y8oTgqZPizjekxpINTHySS8zPQeT4ZIbg35hj1Pp4xKzAw581jukN7_RaOYynFw1ncNyeNDvnWFB4arUHaOmIYBpPU7tdiwRPxSlET4ob7-emiwii3naHOdZefaEhOTIg3IKcLzPTF5hb_JAVlzjGQatvpXCxMv1ur027AmqVOLET6a84I6yMo-oQETlx4GGCC6um_Apekkq6UBQKwLTriwfrxbqSNPtlufyQRT_maCG7RLh6JwEeFKH20H0ydULX1-6Olpx-uNX1H-QQcUistjfBS47PQl2gLogjpQGc5CEmNyIdReiBsbysm2ma1h85-JNGOK28xAvm8vx-BCIbZ07tlr51LHTNIjCqbeKMx11tIgVGGZ_RJAOT8Wq1WZNyMXPv9urGVPt6jq63eJpLEh8904riC3Js9mQD0ypWDyqrytPsbzMPIBJoCMankUG9ijduZo2d5vhqyDdpqE_YwaWL1YUm9bQoyjbME35AOY8Tanom6ta-9Og26VJ9xiooDtoHgeptqEJaQ5AmrBmfGiFCOwIhs9wrS8rFKzIO_kbkHP4wDxgJJV-6E7sjYQGjh6xAV8xvK8vzvWtI9CH-rJv7NGhdVVFwaArsOia9q6WOdqmCLkS4_TjTYmNkE8KaG4NoGaYtivKs00Fp-kdY0OaQbicFqDQfU8dOH4YfVc0B1a6IOn29hDnotUek9Grt2jiQmGyRMv8JUD8w29XMyQ7gUbYU0Lr-MTNBi8aCJj9bdvrtF2GVgea1Hq-ivwbI0n4BH4ceEIS6n9wlmnseJ1Bv5ICW2IqYI-yx4RXe8myUAw-tnYY2G4QtRiin1BjITTE0qvXRimEwP6wJ5q-pddSxs7LNy4OBX-uUxfjUx7Jm3YY6WVjoPkAvPk9",
+          "functionCall": {
+            "id": "adk-7adb15ac-a333-4f69-8a4c-a468c3962b6a",
+            "args": {
+              "metadata": {
+                "extraction_date": "2024-05-23",
+                "academic_year": "2024-2025",
+                "source_file": "stanford_cds_2024_2025.pdf"
+              },
+              "cost_and_financial_aid": {
+                "financial_aid": {
+                  "percent_need_met": "100%",
+                  "average_need_based_package": 67907,
+                  "international_students_eligible": true
+                },
+                "expenses": {
+                  "fees": 2232,
+                  "tuition_in_state": 64992,
+                  "books_and_supplies": 825,
+                  "tuition_out_of_state": 64992,
+                  "other_expenses": 2400,
+                  "room_and_board": 21315
+                },
+                "tuition_structure": "Standard annual tuition for full-time undergraduate students."
+              },
+              "high_school_profile": {
+                "percent_top_10": "96%",
+                "percent_top_25": "99%",
+                "gpa_submission_rate": "91.1%",
+                "percent_top_50": "100%",
+                "class_rank_submission_rate": "25.4%",
+                "average_gpa": 3.96
+              },
+              "admission_factors": {
+                "very_important": [
+                  "Rigor of secondary school record",
+                  "Class rank",
+                  "Academic GPA",
+                  "Standardized test scores",
+                  "Application Essay",
+                  "Recommendation(s)",
+                  "Character/personal qualities"
+                ],
+                "considered": [
+                  "First generation",
+                  "Alumni/ae relation",
+                  "Geographical residence",
+                  "State residency",
+                  "Racial/ethnic status",
+                  "Volunteer work",
+                  "Work experience"
+                ],
+                "important": [
+                  "Extracurricular activities",
+                  "Talent/ability"
+                ],
+                "not_considered": [
+                  "Interview",
+                  "Religious affiliation/commitment"
+                ]
+              },
+              "admissions_statistics": {
+                "applicants": {
+                  "another_gender": 877,
+                  "total": 53733,
+                  "women": 27249,
+                  "men": 25607
+                },
+                "waitlist": {
+                  "offered_spot": 574,
+                  "has_policy": true,
+                  "accepted_spot": 440,
+                  "admitted_from_waitlist": 0
+                },
+                "acceptance_rate": 0.038,
+                "admitted": {
+                  "men": 953,
+                  "another_gender": 43,
+                  "total": 2057,
+                  "women": 1061
+                },
+                "cohort_year": "2024",
+                "enrolled": {
+                  "part_time": 0,
+                  "total": 1702,
+                  "full_time": 1702
+                },
+                "yield_rate": 0.827
+              },
+              "student_life_and_faculty": {
+                "student_faculty_ratio": "6:1",
+                "undergraduate_enrollment": 7841,
+                "demographics": {
+                  "international_percent": "15.2%",
+                  "out_of_state_percent": "66.0%"
+                },
+                "class_size_under_20_percent": "67.9%"
+              },
+              "deadlines": {
+                "regular_decision": {
+                  "type": "Regular Decision",
+                  "notification_date": "April 1",
+                  "is_binding": false,
+                  "deadline": "January 5"
+                },
+                "early_decision_1": {
+                  "notification_date": null,
+                  "type": null,
+                  "deadline": null,
+                  "is_binding": null
+                },
+                "early_decision_2": {
+                  "type": null,
+                  "notification_date": null,
+                  "is_binding": null,
+                  "deadline": null
+                },
+                "early_action": {
+                  "deadline": "November 1",
+                  "is_binding": false,
+                  "notification_date": "December 15",
+                  "type": "Restrictive Early Action"
+                },
+                "transfer_admission": {
+                  "is_rolling": false,
+                  "deadline": "March 15"
+                }
+              },
+              "general_info": {
+                "city": "Stanford",
+                "institution_name": "Stanford University",
+                "school_type": "Private, nonprofit",
+                "academic_calendar": "Quarter",
+                "school_category": "Private, nonprofit university",
+                "website": "www.stanford.edu",
+                "state": "CA"
+              },
+              "test_scores": {
+                "submission_rate_act": "19%",
+                "act": {
+                  "composite_50th": null,
+                  "math_75th": 35,
+                  "composite_25th": 34,
+                  "english_25th": 35,
+                  "english_75th": 36,
+                  "math_25th": 32,
+                  "composite_75th": 35
+                },
+                "policy": "Considered if submitted",
+                "submission_rate_sat": "53%",
+                "sat": {
+                  "ebrw_25th": 750,
+                  "ebrw_75th": 780,
+                  "math_25th": 770,
+                  "math_75th": 800,
+                  "composite_75th": 1580,
+                  "composite_25th": 1520,
+                  "composite_50th": 1550
+                }
+              }
+            },
+            "name": "set_model_response"
+          }
+        }
+      ],
+      "role": "model"
+    },
+    "finishReason": "STOP",
+    "usageMetadata": {
+      "candidatesTokenCount": 1051,
+      "promptTokenCount": 2119,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2119
+        }
+      ],
+      "thoughtsTokenCount": 2800,
+      "totalTokenCount": 5970
+    },
+    "invocationId": "e-59ee71e1-2f83-41dd-86a5-b9deb51cdf51",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "longRunningToolIds": [],
+    "id": "6184f980-c123-4832-b7bc-bde91ac32ad0",
+    "timestamp": 1767366591.835705
+  },
+  {
+    "content": {
+      "parts": [
+        {
+          "functionResponse": {
+            "id": "adk-7adb15ac-a333-4f69-8a4c-a468c3962b6a",
+            "name": "set_model_response",
+            "response": {
+              "metadata": {
+                "source_file": "stanford_cds_2024_2025.pdf",
+                "academic_year": "2024-2025",
+                "extraction_date": "2024-05-23"
+              },
+              "general_info": {
+                "institution_name": "Stanford University",
+                "school_type": "Private, nonprofit",
+                "school_category": "Private, nonprofit university",
+                "academic_calendar": "Quarter",
+                "website": "www.stanford.edu",
+                "city": "Stanford",
+                "state": "CA"
+              },
+              "admission_factors": {
+                "very_important": [
+                  "Rigor of secondary school record",
+                  "Class rank",
+                  "Academic GPA",
+                  "Standardized test scores",
+                  "Application Essay",
+                  "Recommendation(s)",
+                  "Character/personal qualities"
+                ],
+                "important": [
+                  "Extracurricular activities",
+                  "Talent/ability"
+                ],
+                "considered": [
+                  "First generation",
+                  "Alumni/ae relation",
+                  "Geographical residence",
+                  "State residency",
+                  "Racial/ethnic status",
+                  "Volunteer work",
+                  "Work experience"
+                ],
+                "not_considered": [
+                  "Interview",
+                  "Religious affiliation/commitment"
+                ]
+              },
+              "admissions_statistics": {
+                "cohort_year": "2024",
+                "acceptance_rate": 0.038,
+                "yield_rate": 0.827,
+                "applicants": {
+                  "total": 53733,
+                  "men": 25607,
+                  "women": 27249,
+                  "another_gender": 877,
+                  "unknown_gender": null
+                },
+                "admitted": {
+                  "total": 2057,
+                  "men": 953,
+                  "women": 1061,
+                  "another_gender": 43,
+                  "unknown_gender": null
+                },
+                "enrolled": {
+                  "total": 1702,
+                  "full_time": 1702,
+                  "part_time": 0
+                },
+                "waitlist": {
+                  "has_policy": true,
+                  "offered_spot": 574,
+                  "accepted_spot": 440,
+                  "admitted_from_waitlist": 0
+                }
+              },
+              "test_scores": {
+                "policy": "Considered if submitted",
+                "submission_rate_sat": "53%",
+                "submission_rate_act": "19%",
+                "sat": {
+                  "composite_25th": 1520,
+                  "composite_50th": 1550,
+                  "composite_75th": 1580,
+                  "ebrw_25th": 750,
+                  "ebrw_75th": 780,
+                  "math_25th": 770,
+                  "math_75th": 800
+                },
+                "act": {
+                  "composite_25th": 34,
+                  "composite_50th": null,
+                  "composite_75th": 35,
+                  "math_25th": 32,
+                  "math_75th": 35,
+                  "english_25th": 35,
+                  "english_75th": 36
+                }
+              },
+              "high_school_profile": {
+                "average_gpa": 3.96,
+                "gpa_submission_rate": "91.1%",
+                "class_rank_submission_rate": "25.4%",
+                "percent_top_10": "96%",
+                "percent_top_25": "99%",
+                "percent_top_50": "100%"
+              },
+              "cost_and_financial_aid": {
+                "tuition_structure": "Standard annual tuition for full-time undergraduate students.",
+                "expenses": {
+                  "tuition_in_state": 64992,
+                  "tuition_out_of_state": 64992,
+                  "fees": 2232,
+                  "room_and_board": 21315,
+                  "books_and_supplies": 825,
+                  "other_expenses": 2400
+                },
+                "financial_aid": {
+                  "international_students_eligible": true,
+                  "average_need_based_package": 67907,
+                  "percent_need_met": "100%"
+                }
+              },
+              "student_life_and_faculty": {
+                "student_faculty_ratio": "6:1",
+                "undergraduate_enrollment": 7841,
+                "demographics": {
+                  "out_of_state_percent": "66.0%",
+                  "international_percent": "15.2%"
+                },
+                "class_size_under_20_percent": "67.9%"
+              },
+              "deadlines": {
+                "early_decision_1": {
+                  "deadline": null,
+                  "notification_date": null,
+                  "is_binding": null,
+                  "type": null
+                },
+                "early_decision_2": {
+                  "deadline": null,
+                  "notification_date": null,
+                  "is_binding": null,
+                  "type": null
+                },
+                "early_action": {
+                  "deadline": "November 1",
+                  "notification_date": "December 15",
+                  "is_binding": false,
+                  "type": "Restrictive Early Action"
+                },
+                "regular_decision": {
+                  "deadline": "January 5",
+                  "notification_date": "April 1",
+                  "is_binding": false,
+                  "type": "Regular Decision"
+                },
+                "transfer_admission": {
+                  "deadline": "March 15",
+                  "is_rolling": false
+                }
+              }
+            }
+          }
+        }
+      ],
+      "role": "user"
+    },
+    "invocationId": "e-59ee71e1-2f83-41dd-86a5-b9deb51cdf51",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "id": "32fe9abb-def4-4cb8-a5e8-420f7329aa00",
+    "timestamp": 1767366615.023844
+  },
+  {
+    "content": {
+      "parts": [
+        {
+          "text": "{\"metadata\": {\"source_file\": \"stanford_cds_2024_2025.pdf\", \"academic_year\": \"2024-2025\", \"extraction_date\": \"2024-05-23\"}, \"general_info\": {\"institution_name\": \"Stanford University\", \"school_type\": \"Private, nonprofit\", \"school_category\": \"Private, nonprofit university\", \"academic_calendar\": \"Quarter\", \"website\": \"www.stanford.edu\", \"city\": \"Stanford\", \"state\": \"CA\"}, \"admission_factors\": {\"very_important\": [\"Rigor of secondary school record\", \"Class rank\", \"Academic GPA\", \"Standardized test scores\", \"Application Essay\", \"Recommendation(s)\", \"Character/personal qualities\"], \"important\": [\"Extracurricular activities\", \"Talent/ability\"], \"considered\": [\"First generation\", \"Alumni/ae relation\", \"Geographical residence\", \"State residency\", \"Racial/ethnic status\", \"Volunteer work\", \"Work experience\"], \"not_considered\": [\"Interview\", \"Religious affiliation/commitment\"]}, \"admissions_statistics\": {\"cohort_year\": \"2024\", \"acceptance_rate\": 0.038, \"yield_rate\": 0.827, \"applicants\": {\"total\": 53733, \"men\": 25607, \"women\": 27249, \"another_gender\": 877, \"unknown_gender\": null}, \"admitted\": {\"total\": 2057, \"men\": 953, \"women\": 1061, \"another_gender\": 43, \"unknown_gender\": null}, \"enrolled\": {\"total\": 1702, \"full_time\": 1702, \"part_time\": 0}, \"waitlist\": {\"has_policy\": true, \"offered_spot\": 574, \"accepted_spot\": 440, \"admitted_from_waitlist\": 0}}, \"test_scores\": {\"policy\": \"Considered if submitted\", \"submission_rate_sat\": \"53%\", \"submission_rate_act\": \"19%\", \"sat\": {\"composite_25th\": 1520, \"composite_50th\": 1550, \"composite_75th\": 1580, \"ebrw_25th\": 750, \"ebrw_75th\": 780, \"math_25th\": 770, \"math_75th\": 800}, \"act\": {\"composite_25th\": 34, \"composite_50th\": null, \"composite_75th\": 35, \"math_25th\": 32, \"math_75th\": 35, \"english_25th\": 35, \"english_75th\": 36}}, \"high_school_profile\": {\"average_gpa\": 3.96, \"gpa_submission_rate\": \"91.1%\", \"class_rank_submission_rate\": \"25.4%\", \"percent_top_10\": \"96%\", \"percent_top_25\": \"99%\", \"percent_top_50\": \"100%\"}, \"cost_and_financial_aid\": {\"tuition_structure\": \"Standard annual tuition for full-time undergraduate students.\", \"expenses\": {\"tuition_in_state\": 64992, \"tuition_out_of_state\": 64992, \"fees\": 2232, \"room_and_board\": 21315, \"books_and_supplies\": 825, \"other_expenses\": 2400}, \"financial_aid\": {\"international_students_eligible\": true, \"average_need_based_package\": 67907, \"percent_need_met\": \"100%\"}}, \"student_life_and_faculty\": {\"student_faculty_ratio\": \"6:1\", \"undergraduate_enrollment\": 7841, \"demographics\": {\"out_of_state_percent\": \"66.0%\", \"international_percent\": \"15.2%\"}, \"class_size_under_20_percent\": \"67.9%\"}, \"deadlines\": {\"early_decision_1\": {\"deadline\": null, \"notification_date\": null, \"is_binding\": null, \"type\": null}, \"early_decision_2\": {\"deadline\": null, \"notification_date\": null, \"is_binding\": null, \"type\": null}, \"early_action\": {\"deadline\": \"November 1\", \"notification_date\": \"December 15\", \"is_binding\": false, \"type\": \"Restrictive Early Action\"}, \"regular_decision\": {\"deadline\": \"January 5\", \"notification_date\": \"April 1\", \"is_binding\": false, \"type\": \"Regular Decision\"}, \"transfer_admission\": {\"deadline\": \"March 15\", \"is_rolling\": false}}}"
+        }
+      ],
+      "role": "model"
+    },
+    "invocationId": "e-59ee71e1-2f83-41dd-86a5-b9deb51cdf51",
+    "author": "extract_pdf_agent",
+    "actions": {
+      "stateDelta": {},
+      "artifactDelta": {},
+      "requestedAuthConfigs": {},
+      "requestedToolConfirmations": {}
+    },
+    "id": "a445cb7c-b529-4662-8bb4-895458e12245",
+    "timestamp": 1767366615.024702
+  }
+]

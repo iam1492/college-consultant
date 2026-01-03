@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+google-adk
+python-multipart
+pypdf
+httpx
+pinecone
+langchain-google-genai
+python-dotenv
+cachetools<6.0.0
+packaging<25.0
