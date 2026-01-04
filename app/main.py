@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from google.adk.cli.fast_api import get_fast_api_app
 
 from .upload_api import router as upload_router
+from .routers.chat_router import router as chat_router
 
 # Initialize ADK-based FastAPI app
 # Pointing to the directory containing agent folders (app/agents)
@@ -15,6 +16,7 @@ app = get_fast_api_app(agents_dir=AGENTS_DIR, web=True, allow_origins=["*"])
 
 # Include custom routers
 app.include_router(upload_router)
+app.include_router(chat_router)
 
 @app.get("/")
 async def root():
